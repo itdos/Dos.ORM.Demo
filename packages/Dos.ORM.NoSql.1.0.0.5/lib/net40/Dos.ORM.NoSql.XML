@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dos.ORM.NoSql</name>
+    </assembly>
+    <members>
+        <member name="T:Dos.ORM.NoSql.ICache">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Dos.ORM.NoSql.ICache.Remove(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.NoSql.ICache.Set``1(System.String,``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.NoSql.ICache.Set``1(System.String,``0,System.TimeSpan)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <param name="value"></param>
+            <param name="expiresIn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.NoSql.ICache.Get``1(System.String)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Dos.ORM.NoSql.NoSqlSession">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Dos.ORM.NoSql.NoSqlSession.NoSqlType">
+            <summary>
+            NoSql数据库类型
+            </summary>
+        </member>
+        <member name="F:Dos.ORM.NoSql.NoSqlSession.Cache">
+            <summary>
+            缓存对象
+            </summary>
+        </member>
+        <member name="M:Dos.ORM.NoSql.NoSqlSession.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Dos.ORM.NoSql.NoSqlSession.#ctor(Dos.ORM.NoSql.NoSqlType,System.String,System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Dos.ORM.NoSql.NoSqlSession.Remove(System.String)">
+            <summary>
+            删除缓存
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.NoSql.NoSqlSession.Set``1(System.String,``0)">
+            <summary>
+            新增/覆盖 缓存
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.NoSql.NoSqlSession.Set``1(System.String,``0,System.TimeSpan)">
+            <summary>
+            新增/覆盖 缓存
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <param name="value"></param>
+            <param name="expiresIn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.NoSql.NoSqlSession.Get``1(System.String)">
+            <summary>
+            获取缓存
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Dos.ORM.NoSql.IIS">
+            <summary>
+            IIS缓存。无需任何配置。
+            </summary>
+        </member>
+        <member name="T:Dos.ORM.NoSql.Redis">
+            <summary>
+            Redis缓存。需要在AppSetting中配置：RedisHost、RedisPort
+            </summary>
+        </member>
+        <member name="M:Dos.ORM.NoSql.Redis.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Dos.ORM.NoSql.Redis.#ctor(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Dos.ORM.NoSql.Redis.GetMultiplexer(Dos.ORM.NoSql.RedisConfig)">
+            <summary>
+            获取client
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Dos.ORM.NoSql.Redis.Conf">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Dos.ORM.NoSql.Redis.conn">
+            <summary>
+            redis连接端
+            </summary>
+        </member>
+        <member name="P:Dos.ORM.NoSql.RedisConfig.Name">
+            <summary>
+            别名
+            </summary>
+        </member>
+        <member name="P:Dos.ORM.NoSql.RedisConfig.DataBase">
+            <summary>
+            默认数据库
+            </summary>
+        </member>
+        <member name="P:Dos.ORM.NoSql.RedisConfig.Hosts">
+            <summary>
+            主机列表
+            </summary>
+        </member>
+        <member name="P:Dos.ORM.NoSql.RedisConfig.CacheExpireMinutes">
+            <summary>
+            缓存默认过期时间
+            </summary>
+        </member>
+    </members>
+</doc>

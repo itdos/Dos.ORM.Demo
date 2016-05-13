@@ -46,12 +46,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dos.Common, Version=1.0.3.2, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Dos.Common.1.0.3.2\lib\net40\Dos.Common.dll</HintPath>
+    <Reference Include="Dos.Common, Version=1.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Dos.Common.1.0.8.0\lib\net40\Dos.Common.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Dos.ORM">
-      <HintPath>..\..\packages\Dos.ORM.1.10.5.4\lib\net40\Dos.ORM.dll</HintPath>
+    <Reference Include="Dos.ORM, Version=1.10.5.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Dos.ORM.1.10.5.5\lib\net40\Dos.ORM.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Dos.ORM.MySql">
@@ -67,8 +67,8 @@
       <HintPath>..\..\packages\MySql.Data.6.9.8\lib\net40\MySql.Data.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.8.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -149,8 +149,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Handler\ErrorLogAttribute.cs" />
-    <Compile Include="Models\TestTableViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -159,11 +157,14 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\Bootstrap\bootstrap.min.css" />
     <Content Include="Content\Bootstrap\bootstrap.min.js" />
-    <Content Include="Content\pagination.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\avalon.min.js" />
+    <Content Include="Scripts\avalonUI\avalon.pager.css" />
+    <Content Include="Scripts\avalonUI\avalon.pager.html" />
+    <Content Include="Scripts\avalonUI\avalon.pager.js" />
+    <Content Include="Scripts\avalonUI\oniui-common.css" />
+    <Content Include="Scripts\avalonUI\oniui-theme.css" />
     <Content Include="Scripts\jquery-1.11.1.min.js" />
-    <Content Include="Scripts\jquery.pagination.js" />
     <Content Include="Scripts\Common.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -185,24 +186,14 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Dos.ORM.PostgreSql\Dos.ORM.PostgreSql.csproj">
-      <Project>{86f95784-a739-41ef-9724-909126c11800}</Project>
-      <Name>Dos.ORM.PostgreSql</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Business\Business.csproj">
       <Project>{eb7a463e-f934-4697-9081-68179a4a1be1}</Project>
-      <Name>Business %28初级玩法demo之mvc简单三层\Business%29</Name>
+      <Name>Business</Name>
     </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{657e4ecd-3cb3-4d79-9393-a2a774b78513}</Project>
       <Name>Model</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Views\Home\Sqlite.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Views\Home\Access.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -30,8 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dos.ORM, Version=1.10.5.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Dos.ORM.1.10.5.4\lib\net40\Dos.ORM.dll</HintPath>
+    <Reference Include="Dos.ORM, Version=1.10.5.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Dos.ORM.1.10.5.5\lib\net40\Dos.ORM.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -48,8 +48,7 @@
     <Compile Include="Base\Param.cs" />
     <Compile Include="Base\ParamExtentions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestTable.cs" />
-    <Compile Include="Sqlite\TableSqlite.cs" />
+    <Compile Include="TStudent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

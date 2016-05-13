@@ -5,11 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using Business;
 using Model.Base;
-using UI.Handler;
 
 namespace UI.Controllers
 {
-    [ErrorLog]
     public class HomeController : Controller
     {
         #region Oracle、MySql、SqlServer、PostgreSql等
@@ -20,34 +18,34 @@ namespace UI.Controllers
         /// <summary>
         /// 获取数据
         /// </summary>
-        public JsonResult GetUser(TestTableParam param)
+        public JsonResult GetUser(TStudentParam param)
         {
-            var result = new TestTableLogic().GetUser(param);
+            var result = new TStudentLogic().GetUser(param);
             var test = Json(result);
             return test;
         }
         /// <summary>
         /// 新增数据
         /// </summary>
-        public JsonResult AddUser(TestTableParam param)
+        public JsonResult AddUser(TStudentParam param)
         {
-            var result = new TestTableLogic().AddUser(param);
+            var result = new TStudentLogic().AddUser(param);
             return Json(result);
         }
         /// <summary>
         /// 修改数据
         /// </summary>
-        public JsonResult UptUser(TestTableParam param)
+        public JsonResult UptUser(TStudentParam param)
         {
-            var result = new TestTableLogic().UptUser(param);
+            var result = new TStudentLogic().UptUser(param);
             return Json(result);
         }
         /// <summary>
         /// 删除数据
         /// </summary>
-        public JsonResult DelUser(TestTableParam param)
+        public JsonResult DelUser(TStudentParam param)
         {
-            var result = new TestTableLogic().DelUser(param);
+            var result = new TStudentLogic().DelUser(param);
             return Json(result);
         }
         #endregion

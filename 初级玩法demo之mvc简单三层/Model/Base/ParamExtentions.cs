@@ -22,7 +22,7 @@ using System.Text;
 
 namespace Model.Base
 {
-    public class TestTableParam : Param
+    public class TStudentParam : Param
     {
         public Guid? Id { get; set; }
         [DisplayFormat(ConvertEmptyStringToNull = false)]

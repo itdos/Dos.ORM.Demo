@@ -1,0 +1,398 @@
+2016-05-13 15:14:23
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:23
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:24
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:24
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:32
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:32
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:32
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:32
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:34
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:34
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:34
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:34
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:40
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime_2,@MobilePhone_3,@IDNumber_4,@Name_5,@Id_6)	
+Parameters:
+@CreateTime_2[DateTime] = 2016/5/13 15:14:40
+@MobilePhone_3[String] = cc
+@IDNumber_4[String] = cc
+@Name_5[String] = ccc
+@Id_6[String] = 1b796411-8868-4a74-b01a-c094541dbb83
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:40
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime_2,@MobilePhone_3,@IDNumber_4,@Name_5,@Id_6)	
+Parameters:
+@CreateTime_2[DateTime] = 2016/5/13 15:14:40
+@MobilePhone_3[String] = cc
+@IDNumber_4[String] = cc
+@Name_5[String] = ccc
+@Id_6[String] = 1b796411-8868-4a74-b01a-c094541dbb83
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:40
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:40
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:40
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:40
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:52
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:52
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:52
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:52
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:55
+Text:	DELETE FROM [T_Student] WHERE [T_Student].[Id] = @Id_7	
+Parameters:
+@Id_7[String] = 1b796411-8868-4a74-b01a-c094541dbb83
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:55
+Text:	DELETE FROM [T_Student] WHERE [T_Student].[Id] = @Id_7	
+Parameters:
+@Id_7[String] = 1b796411-8868-4a74-b01a-c094541dbb83
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:55
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:55
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:55
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:55
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:57
+Text:	UPDATE [T_Student] SET [MobilePhone]=@MobilePhone_9,[IDNumber]=@IDNumber_10,[Name]=@Name_11 WHERE [T_Student].[Id] = @Id_8	
+Parameters:
+@MobilePhone_9[String] = 222
+@IDNumber_10[String] = aa
+@Name_11[String] = aaa1
+@Id_8[String] = 2f84b5f2-d15f-436d-848d-f0d3fc5a2178
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:57
+Text:	UPDATE [T_Student] SET [MobilePhone]=@MobilePhone_9,[IDNumber]=@IDNumber_10,[Name]=@Name_11 WHERE [T_Student].[Id] = @Id_8	
+Parameters:
+@MobilePhone_9[String] = 222
+@IDNumber_10[String] = aa
+@Name_11[String] = aaa1
+@Id_8[String] = 2f84b5f2-d15f-436d-848d-f0d3fc5a2178
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:57
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:57
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:57
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:14:57
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:15:02
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:15:02
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:15:02
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:15:02
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:15:50
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:15:50
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:15:50
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:15:50
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:15:52
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:15:52
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:15:52
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:15:52
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:19:50
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:19:50
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:19:50
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:19:50
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:21:05
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:21:05
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:21:05
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:21:05
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:24:49
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:24:49
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:24:49
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:24:49
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:24:54
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime_2,@MobilePhone_3,@IDNumber_4,@Name_5,@Id_6)	
+Parameters:
+@CreateTime_2[DateTime] = 2016/5/13 15:24:54
+@MobilePhone_3[String] = a
+@IDNumber_4[String] = 2
+@Name_5[String] = 11
+@Id_6[String] = 149f7f11-be31-420b-9fff-2c0d4d4233fd
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:24:54
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime_2,@MobilePhone_3,@IDNumber_4,@Name_5,@Id_6)	
+Parameters:
+@CreateTime_2[DateTime] = 2016/5/13 15:24:54
+@MobilePhone_3[String] = a
+@IDNumber_4[String] = 2
+@Name_5[String] = 11
+@Id_6[String] = 149f7f11-be31-420b-9fff-2c0d4d4233fd
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:24:54
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:24:54
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:24:54
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:24:54
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:25:19
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:25:19
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:25:19
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:25:19
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:25:41
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:25:41
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:25:41
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-05-13 15:25:41
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------

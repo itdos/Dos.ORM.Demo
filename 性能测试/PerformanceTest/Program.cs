@@ -21,7 +21,13 @@ namespace PerformanceTest
             var scount = 10000;
             //测试插入、修改、删除数据量
             var icount = 1000;
-
+            var 每类执行多少次 = 2;//默认值2
+            var 是否执行第一类 = true;//默认值true
+            var 是否执行增删改操作 = true;//默认值true
+            var tcount = 0;
+            var needInsert = new List<string>();
+            var needUpdate = new List<string>();
+            var needDelete = new List<string>();
             #endregion
 
             Console.WriteLine("-----测试分两类测试");
@@ -32,135 +38,145 @@ namespace PerformanceTest
             Console.WriteLine("");
             Console.WriteLine("-----因此：Dos.ORM与dapper对比sql性能；与EF对比面向对象写法性能。");
             Console.WriteLine("");
-            //第一类
-            for (int i = 1; i <= 2; i++)
+            if (是否执行第一类)
             {
-                Console.WriteLine("-----第一类，开始第【" + i + "】次测试-----");
+                #region 第一类
+                for (int i = 1; i <= 每类执行多少次; i++)
+                {
+                    Console.WriteLine("-----第一类，开始第【" + i + "】次测试-----");
 
-                #region Dos.ORM查询
-                time.Restart();
-                var dosList = Db.Context.FromSql(" select top " 
-                    + scount 
-                    + " * from T_PerformanceTest ").ToList<Dapper.Model.TPerformanceTest>();
-                time.Stop();
-                Console.WriteLine("Dos.ORM查询" + dosList.Count + "条执行时间：" + time.ElapsedMilliseconds);
-                #endregion
-                #region Dos.ORM插入
-                //插入。每次插入均重新从连接池取连接、插入数据、归还连接。
-                #region 初始化需要插入的sql
-                var needInsert = new List<string>();
-                var ids = new List<Guid>();
-                for (int j = 0; j < icount; j++)
-                {
-                    ids.Add(Guid.NewGuid());
-                }
-                for (int j = 0; j < icount; j++)
-                {
-                    needInsert.Add(
-                        $" insert into T_PerformanceTest values('{ids[j]}','{"IT大师 http://www.itdos.com"}'," +
-                        $"{j},{j},{j},'{"IT大师text http://www.itdos.com"}','{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}',{1},{j}) ");
-                }
-                #endregion
-                var tcount = 0;
-                time.Restart();
-                foreach (var sql in needInsert)
-                {
-                    tcount += Db.Context.FromSql(sql).ExecuteNonQuery();
-                }
-                time.Stop();
-                Console.WriteLine("Dos.ORM插入" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
-                #endregion
-                #region Dos.ORM修改
-                //修改。每次修改均重新从连接池取连接、插入数据、归还连接。
-                #region 初始化需要修改的sql
-                var needUpdate = new List<string>();
-                for (int j = 0; j < icount; j++)
-                {
-                    needUpdate.Add($" update T_PerformanceTest set T1='IT大师 http://www.itdos.com2',T2={j+2},T3={j+2},T4={j+2},T5='IT大师text http://www.itdos.com2',T6='{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}',T7=0,T8={j+2} where Id='{ids[j]}' ");
-                }
-                #endregion
-                tcount = 0;
-                time.Restart();
-                foreach (var sql in needUpdate)
-                {
-                    tcount += Db.Context.FromSql(sql).ExecuteNonQuery();
-                }
-                time.Stop();
-                Console.WriteLine("Dos.ORM修改" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
-                #endregion
-                #region Dos.ORM删除
-                //删除。每次删除均重新从连接池取连接、插入数据、归还连接。
-                #region 初始化需要删除的sql
-                var needDelete = new List<string>();
-                for (int j = 0; j < icount; j++)
-                {
-                    needDelete.Add($" delete from T_PerformanceTest where Id='{ids[j]}' ");
-                }
-                #endregion
-                tcount = 0;
-                time.Restart();
-                foreach (var sql in needDelete)
-                {
-                    tcount += Db.Context.FromSql(sql).ExecuteNonQuery();
-                }
-                time.Stop();
-                Console.WriteLine("Dos.ORM删除" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
-                #endregion
+                    #region Dos.ORM查询
+                    time.Restart();
+                    var dosList = Db.Context.FromSql(" select top "
+                        + scount
+                        + " * from T_PerformanceTest ").ToList<Dapper.Model.TPerformanceTest>();
+                    time.Stop();
+                    Console.WriteLine("Dos.ORM查询" + dosList.Count + "条执行时间：" + time.ElapsedMilliseconds);
+                    #endregion
 
-                Console.WriteLine("");
+                    if (是否执行增删改操作)
+                    {
+                        #region Dos.ORM插入
+                        //插入。每次插入均重新从连接池取连接、插入数据、归还连接。
+                        #region 初始化需要插入的sql
+                        var ids = new List<Guid>();
+                        for (int j = 0; j < icount; j++)
+                        {
+                            ids.Add(Guid.NewGuid());
+                        }
+                        for (int j = 0; j < icount; j++)
+                        {
+                            needInsert.Add(
+                                $" insert into T_PerformanceTest values('{ids[j]}','{"IT大师 http://www.itdos.com"}'," +
+                                $"{j},{j},{j},'{"IT大师text http://www.itdos.com"}','{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}',{1},{j}) ");
+                        }
+                        #endregion
+                        tcount = 0;
+                        time.Restart();
+                        foreach (var sql in needInsert)
+                        {
+                            tcount += Db.Context.FromSql(sql).ExecuteNonQuery();
+                        }
+                        time.Stop();
+                        Console.WriteLine("Dos.ORM插入" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
+                        #endregion
+                        #region Dos.ORM修改
+                        //修改。每次修改均重新从连接池取连接、插入数据、归还连接。
+                        #region 初始化需要修改的sql
+                        for (int j = 0; j < icount; j++)
+                        {
+                            needUpdate.Add($" update T_PerformanceTest set T1='IT大师 http://www.itdos.com2',T2={j + 2},T3={j + 2},T4={j + 2},T5='IT大师text http://www.itdos.com2',T6='{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}',T7=0,T8={j + 2} where Id='{ids[j]}' ");
+                        }
+                        #endregion
+                        tcount = 0;
+                        time.Restart();
+                        foreach (var sql in needUpdate)
+                        {
+                            tcount += Db.Context.FromSql(sql).ExecuteNonQuery();
+                        }
+                        time.Stop();
+                        Console.WriteLine("Dos.ORM修改" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
+                        #endregion
+                        #region Dos.ORM删除
+                        //删除。每次删除均重新从连接池取连接、插入数据、归还连接。
+                        #region 初始化需要删除的sql
+                        for (int j = 0; j < icount; j++)
+                        {
+                            needDelete.Add($" delete from T_PerformanceTest where Id='{ids[j]}' ");
+                        }
+                        #endregion
+                        tcount = 0;
+                        time.Restart();
+                        foreach (var sql in needDelete)
+                        {
+                            tcount += Db.Context.FromSql(sql).ExecuteNonQuery();
+                        }
+                        time.Stop();
+                        Console.WriteLine("Dos.ORM删除" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
+                        #endregion
+                    }
 
-                #region Dapper查询
-                time.Restart();
-                var efList = BaseDapper.Context.Query<Dapper.Model.TPerformanceTest>(" select top "
-                    + scount
-                    + " * from T_PerformanceTest ");
-                time.Stop();
-                Console.WriteLine("Dapper查询" + efList.Count + "条执行时间：" + time.ElapsedMilliseconds);
-                #endregion
-                #region Dapper插入
-                //插入。每次插入均重新从连接池取连接、插入数据、归还连接。
-                tcount = 0;
-                time.Restart();
-                foreach (var sql in needInsert)
-                {
-                    tcount += BaseDapper.Context.Execute(sql);
-                }
-                time.Stop();
-                Console.WriteLine("Dapper插入" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
-                #endregion
-                #region Dapper修改
-                //修改。每次修改均重新从连接池取连接、插入数据、归还连接。
-                tcount = 0;
-                time.Restart();
-                foreach (var sql in needUpdate)
-                {
-                    tcount += BaseDapper.Context.Execute(sql);
-                }
-                time.Stop();
-                Console.WriteLine("Dapper修改" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
-                #endregion
-                #region Dapper删除
-                //删除。每次删除均重新从连接池取连接、插入数据、归还连接。
-                tcount = 0;
-                time.Restart();
-                foreach (var sql in needDelete)
-                {
-                    tcount += BaseDapper.Context.Execute(sql);
-                }
-                time.Stop();
-                Console.WriteLine("Dapper删除" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
-                #endregion
+                    Console.WriteLine("");
 
-                Console.WriteLine("");
-                scount *= 2;
-                icount *= 2;
+                    #region Dapper查询
+                    time.Restart();
+                    var efList = BaseDapper.Context.Query<Dapper.Model.TPerformanceTest>(" select top "
+                        + scount
+                        + " * from T_PerformanceTest ");
+                    time.Stop();
+                    Console.WriteLine("Dapper查询" + efList.Count + "条执行时间：" + time.ElapsedMilliseconds);
+                    #endregion
+
+                    if (是否执行增删改操作)
+                    {
+                        #region Dapper插入
+                        //插入。每次插入均重新从连接池取连接、插入数据、归还连接。
+                        tcount = 0;
+                        time.Restart();
+                        foreach (var sql in needInsert)
+                        {
+                            tcount += BaseDapper.Context.Execute(sql);
+                        }
+                        time.Stop();
+                        Console.WriteLine("Dapper插入" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
+                        #endregion
+                        #region Dapper修改
+                        //修改。每次修改均重新从连接池取连接、插入数据、归还连接。
+                        tcount = 0;
+                        time.Restart();
+                        foreach (var sql in needUpdate)
+                        {
+                            tcount += BaseDapper.Context.Execute(sql);
+                        }
+                        time.Stop();
+                        Console.WriteLine("Dapper修改" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
+                        #endregion
+                        #region Dapper删除
+                        //删除。每次删除均重新从连接池取连接、插入数据、归还连接。
+                        tcount = 0;
+                        time.Restart();
+                        foreach (var sql in needDelete)
+                        {
+                            tcount += BaseDapper.Context.Execute(sql);
+                        }
+                        time.Stop();
+                        Console.WriteLine("Dapper删除" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
+                        #endregion
+                    }
+
+                    Console.WriteLine("");
+
+                    scount *= 2;
+                    icount *= 2;
+                }
+                #endregion
             }
 
             scount = 10000;
             icount = 1000;
 
-            //第二类
-            for (int i = 1; i <= 1; i++)
+            #region 第二类
+            for (int i = 1; i <= 每类执行多少次; i++)
             {
                 Console.WriteLine("-----第二类，开始第【" + i + "】次测试-----");
 
@@ -170,68 +186,80 @@ namespace PerformanceTest
                 time.Stop();
                 Console.WriteLine("Dos.ORM查询" + dosList.Count + "条执行时间：" + time.ElapsedMilliseconds);
                 #endregion
-                #region Dos.ORM插入
-                //插入。每次插入均重新从连接池取连接、插入数据、归还连接。
-                //初始化需要插入的实体
-                var needInsert = new List<Dos.Model.TPerformanceTest>();
-                for (int j = 0; j < icount; j++)
+
+                if (是否执行增删改操作)
                 {
-                    needInsert.Add(new Dos.Model.TPerformanceTest()
+                    #region Dos.ORM插入
+
+                    //插入。每次插入均重新从连接池取连接、插入数据、归还连接。
+                    //初始化需要插入的实体
+                    var needInsertList = new List<Dos.Model.TPerformanceTest>();
+                    for (int j = 0; j < icount; j++)
                     {
-                        Id = Guid.NewGuid(),
-                        T1 = "IT大师 http://www.itdos.com",
-                        T2 = j,
-                        T3 = j,
-                        T4 = j,
-                        T5 = "IT大师text http://www.itdos.com",
-                        T6 = DateTime.Now,
-                        T7 = true,
-                        T8 = j
-                    });
+                        needInsertList.Add(new Dos.Model.TPerformanceTest()
+                        {
+                            Id = Guid.NewGuid(),
+                            T1 = "IT大师 http://www.itdos.com",
+                            T2 = j,
+                            T3 = j,
+                            T4 = j,
+                            T5 = "IT大师text http://www.itdos.com",
+                            T6 = DateTime.Now,
+                            T7 = true,
+                            T8 = j
+                        });
+                    }
+                    tcount = 0;
+                    time.Restart();
+                    foreach (var model in needInsertList)
+                    {
+                        tcount += TPerformanceTestDosRepository.Insert(model);
+                    }
+                    time.Stop();
+                    Console.WriteLine("Dos.ORM插入" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
+
+                    #endregion
+
+                    #region Dos.ORM修改
+
+                    //修改。每次修改均重新从连接池取连接、插入数据、归还连接。
+                    //初始化需要修改的实体
+                    foreach (var model in needInsertList)
+                    {
+                        model.T1 = model.T1 + "2";
+                        model.T2 = model.T2 + 2;
+                        model.T3 = model.T3 + 2;
+                        model.T4 = model.T4 + 2;
+                        model.T5 = model.T5 + "2";
+                        model.T6 = DateTime.Now;
+                        model.T7 = false;
+                        model.T8 = model.T8 + 2;
+                    }
+                    tcount = 0;
+                    time.Restart();
+                    foreach (var model in needInsertList)
+                    {
+                        tcount += TPerformanceTestDosRepository.Update(model);
+                    }
+                    time.Stop();
+                    Console.WriteLine("Dos.ORM修改" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
+
+                    #endregion
+
+                    #region Dos.ORM删除
+
+                    //删除。每次删除均重新从连接池取连接、插入数据、归还连接。
+                    tcount = 0;
+                    time.Restart();
+                    foreach (var model in needInsertList)
+                    {
+                        tcount += TPerformanceTestDosRepository.Delete(model);
+                    }
+                    time.Stop();
+                    Console.WriteLine("Dos.ORM删除" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
+
+                    #endregion
                 }
-                var tcount = 0;
-                time.Restart();
-                foreach (var model in needInsert)
-                {
-                    tcount += TPerformanceTestDosRepository.Insert(model);
-                }
-                time.Stop();
-                Console.WriteLine("Dos.ORM插入" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
-                #endregion
-                #region Dos.ORM修改
-                //修改。每次修改均重新从连接池取连接、插入数据、归还连接。
-                //初始化需要修改的实体
-                foreach (var model in needInsert)
-                {
-                    model.T1 = model.T1 + "2";
-                    model.T2 = model.T2 + 2;
-                    model.T3 = model.T3 + 2;
-                    model.T4 = model.T4 + 2;
-                    model.T5 = model.T5 + "2";
-                    model.T6 = DateTime.Now;
-                    model.T7 = false;
-                    model.T8 = model.T8 + 2;
-                }
-                tcount = 0;
-                time.Restart();
-                foreach (var model in needInsert)
-                {
-                    tcount += TPerformanceTestDosRepository.Update(model);
-                }
-                time.Stop();
-                Console.WriteLine("Dos.ORM修改" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
-                #endregion
-                #region Dos.ORM删除
-                //删除。每次删除均重新从连接池取连接、插入数据、归还连接。
-                tcount = 0;
-                time.Restart();
-                foreach (var model in needInsert)
-                {
-                    tcount += TPerformanceTestDosRepository.Delete(model);
-                }
-                time.Stop();
-                Console.WriteLine("Dos.ORM删除" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
-                #endregion
 
                 Console.WriteLine("");
 
@@ -241,74 +269,86 @@ namespace PerformanceTest
                 time.Stop();
                 Console.WriteLine("EF查询" + efList.Count + "条执行时间：" + time.ElapsedMilliseconds);
                 #endregion
-                #region EF插入
-                //插入。每次插入均重新从连接池取连接、插入数据、归还连接。
-                //初始化需要插入的实体
-                var needInsert2 = new List<T_PerformanceTest>();
-                for (int j = 0; j < icount; j++)
-                {
-                    needInsert2.Add(new T_PerformanceTest()
-                    {
-                        Id = Guid.NewGuid(),
-                        T1 = "IT大师 http://www.itdos.com",
-                        T2 = j,
-                        T3 = j,
-                        T4 = j,
-                        T5 = "IT大师text http://www.itdos.com",
-                        T6 = DateTime.Now,
-                        T7 = true,
-                        T8 = j
-                    });
-                }
-                tcount = 0;
-                time.Restart();
-                foreach (var model in needInsert2)
-                {
-                    tcount += T_PerformanceTestEFRepository.Insert(model);
-                }
-                time.Stop();
-                Console.WriteLine("EF插入" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
-                #endregion
-                #region EF修改
-                //修改。每次修改均重新从连接池取连接、插入数据、归还连接。
-                //初始化需要修改的实体
-                foreach (var model in needInsert2)
-                {
-                    model.T1 = model.T1 + "2";
-                    model.T2 = model.T2 + 2;
-                    model.T3 = model.T3 + 2;
-                    model.T4 = model.T4 + 2;
-                    model.T5 = model.T5 + "2";
-                    model.T6 = DateTime.Now;
-                    model.T7 = false;
-                    model.T8 = model.T8 + 2;
-                }
-                tcount = 0;
-                time.Restart();
-                foreach (var model in needInsert2)
-                {
-                    tcount += T_PerformanceTestEFRepository.Update(model);
-                }
-                time.Stop();
-                Console.WriteLine("EF修改" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
-                #endregion
-                #region EF删除
-                //删除。每次删除均重新从连接池取连接、插入数据、归还连接。
-                tcount = 0;
-                time.Restart();
-                foreach (var model in needInsert2)
-                {
-                    tcount += T_PerformanceTestEFRepository.Delete(model);
-                }
-                time.Stop();
-                Console.WriteLine("EF删除" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
-                #endregion
-                Console.WriteLine("Ps：可能是我EF的写法有问题，才导致EF的增、删、改性能极低。暂时未找到原因。");
 
+                if (是否执行增删改操作)
+                {
+                    #region EF插入
+
+                    //插入。每次插入均重新从连接池取连接、插入数据、归还连接。
+                    //初始化需要插入的实体
+                    var needInsert2 = new List<T_PerformanceTest>();
+                    for (int j = 0; j < icount; j++)
+                    {
+                        needInsert2.Add(new T_PerformanceTest()
+                        {
+                            Id = Guid.NewGuid(),
+                            T1 = "IT大师 http://www.itdos.com",
+                            T2 = j,
+                            T3 = j,
+                            T4 = j,
+                            T5 = "IT大师text http://www.itdos.com",
+                            T6 = DateTime.Now,
+                            T7 = true,
+                            T8 = j
+                        });
+                    }
+                    tcount = 0;
+                    time.Restart();
+                    foreach (var model in needInsert2)
+                    {
+                        tcount += T_PerformanceTestEFRepository.Insert(model);
+                    }
+                    time.Stop();
+                    Console.WriteLine("EF插入" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
+
+                    #endregion
+
+                    #region EF修改
+
+                    //修改。每次修改均重新从连接池取连接、插入数据、归还连接。
+                    //初始化需要修改的实体
+                    foreach (var model in needInsert2)
+                    {
+                        model.T1 = model.T1 + "2";
+                        model.T2 = model.T2 + 2;
+                        model.T3 = model.T3 + 2;
+                        model.T4 = model.T4 + 2;
+                        model.T5 = model.T5 + "2";
+                        model.T6 = DateTime.Now;
+                        model.T7 = false;
+                        model.T8 = model.T8 + 2;
+                    }
+                    tcount = 0;
+                    time.Restart();
+                    foreach (var model in needInsert2)
+                    {
+                        tcount += T_PerformanceTestEFRepository.Update(model);
+                    }
+                    time.Stop();
+                    Console.WriteLine("EF修改" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
+
+                    #endregion
+
+                    #region EF删除
+
+                    //删除。每次删除均重新从连接池取连接、插入数据、归还连接。
+                    tcount = 0;
+                    time.Restart();
+                    foreach (var model in needInsert2)
+                    {
+                        tcount += T_PerformanceTestEFRepository.Delete(model);
+                    }
+                    time.Stop();
+                    Console.WriteLine("EF删除" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
+
+                    #endregion
+                    Console.WriteLine("Ps：可能是我EF的写法有问题，才导致EF的增、删、改性能极低。暂时未找到原因。");
+                }
                 Console.WriteLine("");
                 scount *= 2;
                 icount *= 2;
             }
+            #endregion
         }
     }
 }

@@ -1,0 +1,1468 @@
+2016-06-21 09:27:20
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:27:20
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:27:20
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:27:20
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:27:33
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:27:33
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:27:33
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:27:33
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:27:41
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:27:41
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:27:41
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:27:41
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:27:47
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:27:47
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:27:47
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:27:47
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:28:27
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:28:27
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:28:27
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:28:27
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:29:09
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:29:09
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:29:09
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:29:09
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:29:33
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:29:33
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:29:33
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:29:33
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:30:09
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:30:09
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:30:09
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:30:09
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:40
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:40
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:40
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:40
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:42
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name1)	
+Parameters:
+@Name1[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:42
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name1)	
+Parameters:
+@Name1[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:42
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name1) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name1[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:42
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name1) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name1[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:44
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name2)	
+Parameters:
+@Name2[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:44
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name2)	
+Parameters:
+@Name2[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:44
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name2) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name2[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:44
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name2) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name2[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:44
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name3)	
+Parameters:
+@Name3[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:44
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name3)	
+Parameters:
+@Name3[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:44
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name3) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name3[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:44
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name3) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name3[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:44
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name4)	
+Parameters:
+@Name4[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:44
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name4)	
+Parameters:
+@Name4[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:44
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name4) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name4[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:31:44
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name4) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name4[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:32:18
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name5)	
+Parameters:
+@Name5[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:32:18
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name5)	
+Parameters:
+@Name5[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:32:19
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name5) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name5[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:32:19
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name5) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name5[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:32:19
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name6)	
+Parameters:
+@Name6[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:32:19
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name6)	
+Parameters:
+@Name6[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:32:26
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name6) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name6[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:32:26
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name6) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name6[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:18
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:18
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:18
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:18
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:20
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name7)	
+Parameters:
+@Name7[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:20
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name7)	
+Parameters:
+@Name7[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:20
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name7) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name7[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:20
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name7) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name7[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:21
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name8)	
+Parameters:
+@Name8[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:21
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name8)	
+Parameters:
+@Name8[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:21
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name8) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name8[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:21
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name8) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name8[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:21
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name9)	
+Parameters:
+@Name9[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:21
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name9)	
+Parameters:
+@Name9[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:21
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name9) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name9[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:21
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name9) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name9[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:21
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name10)	
+Parameters:
+@Name10[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:21
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name10)	
+Parameters:
+@Name10[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:21
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name10) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name10[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:21
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name10) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name10[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:27
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name11)	
+Parameters:
+@Name11[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:27
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name11)	
+Parameters:
+@Name11[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:27
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name11) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name11[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:27
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name11) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name11[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:36
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name12)	
+Parameters:
+@Name12[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:36
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name12)	
+Parameters:
+@Name12[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:36
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name12) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name12[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:36
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name12) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name12[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:37
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name13)	
+Parameters:
+@Name13[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:37
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name13)	
+Parameters:
+@Name13[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:37
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name13) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name13[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:37
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name13) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name13[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:37
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name14)	
+Parameters:
+@Name14[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:37
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name14)	
+Parameters:
+@Name14[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:37
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name14) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name14[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:37
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name14) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name14[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:38
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name15)	
+Parameters:
+@Name15[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:38
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name15)	
+Parameters:
+@Name15[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:38
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name15) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name15[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:33:38
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name15) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name15[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:50
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:50
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:50
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:50
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:51
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name16)	
+Parameters:
+@Name16[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:51
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name16)	
+Parameters:
+@Name16[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:51
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name16) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name16[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:51
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name16) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name16[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:51
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name17)	
+Parameters:
+@Name17[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:51
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name17)	
+Parameters:
+@Name17[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:51
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name17) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name17[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:51
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name17) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name17[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:52
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name18)	
+Parameters:
+@Name18[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:52
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name18)	
+Parameters:
+@Name18[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:52
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name18) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name18[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:52
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name18) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name18[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:52
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name19)	
+Parameters:
+@Name19[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:52
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name19)	
+Parameters:
+@Name19[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:52
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name19) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name19[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:52
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name19) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name19[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:53
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name20)	
+Parameters:
+@Name20[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:53
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name20)	
+Parameters:
+@Name20[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:53
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name20) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name20[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:53
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name20) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name20[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:53
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name21)	
+Parameters:
+@Name21[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:53
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name21)	
+Parameters:
+@Name21[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:53
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name21) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name21[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:53
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name21) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name21[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:53
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name22)	
+Parameters:
+@Name22[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:53
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name22)	
+Parameters:
+@Name22[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:53
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name22) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name22[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:53
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name22) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name22[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:58
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name23)	
+Parameters:
+@Name23[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:58
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name23)	
+Parameters:
+@Name23[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:58
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name23) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name23[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:35:58
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name23) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name23[String] = 111
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:19
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:19
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:19
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:19
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:21
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name1)	
+Parameters:
+@Name1[String] = 11
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:21
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name1)	
+Parameters:
+@Name1[String] = 11
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:21
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name1) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name1[String] = 11
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:21
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name1) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name1[String] = 11
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:38
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:38
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:38
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:38
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:40
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name2)	
+Parameters:
+@Name2[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:40
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name2)	
+Parameters:
+@Name2[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:40
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name2) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name2[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:40
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name2) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name2[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:41
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name3)	
+Parameters:
+@Name3[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:41
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name3)	
+Parameters:
+@Name3[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:41
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name3) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name3[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:41
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name3) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name3[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:41
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name4)	
+Parameters:
+@Name4[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:41
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name4)	
+Parameters:
+@Name4[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:41
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name4) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name4[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:41
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name4) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name4[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:42
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name5)	
+Parameters:
+@Name5[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:42
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name5)	
+Parameters:
+@Name5[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:42
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name5) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name5[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:42
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name5) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name5[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:43
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name6)	
+Parameters:
+@Name6[String] = 11
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:43
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name6)	
+Parameters:
+@Name6[String] = 11
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:43
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name6) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name6[String] = 11
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:43
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name6) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name6[String] = 11
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:45
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name7)	
+Parameters:
+@Name7[String] = 11
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:45
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name7)	
+Parameters:
+@Name7[String] = 11
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:45
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name7) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name7[String] = 11
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:45
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name7) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name7[String] = 11
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:47
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name8)	
+Parameters:
+@Name8[String] = 22
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:47
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name8)	
+Parameters:
+@Name8[String] = 22
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:47
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name8) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name8[String] = 22
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:47
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name8) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name8[String] = 22
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:49
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name9)	
+Parameters:
+@Name9[String] = 22
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:49
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name9)	
+Parameters:
+@Name9[String] = 22
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:49
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name9) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name9[String] = 22
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:49
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name9) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name9[String] = 22
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:50
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name10)	
+Parameters:
+@Name10[String] = 22
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:50
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name10)	
+Parameters:
+@Name10[String] = 22
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:50
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name10) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name10[String] = 22
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:50
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name10) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name10[String] = 22
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:50
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name11)	
+Parameters:
+@Name11[String] = 22
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:50
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name11)	
+Parameters:
+@Name11[String] = 22
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:50
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name11) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name11[String] = 22
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:50
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name11) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name11[String] = 22
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:57
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name12)	
+Parameters:
+@Name12[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:57
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name12)	
+Parameters:
+@Name12[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:57
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name12) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name12[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:57
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name12) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name12[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:58
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name13)	
+Parameters:
+@Name13[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:58
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name13)	
+Parameters:
+@Name13[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:58
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name13) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name13[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:58
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name13) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name13[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:58
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name14)	
+Parameters:
+@Name14[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:58
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name14)	
+Parameters:
+@Name14[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:58
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name14) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name14[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:36:58
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name14) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name14[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:07
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:07
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:07
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:07
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:09
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name1)	
+Parameters:
+@Name1[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:09
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name1)	
+Parameters:
+@Name1[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:09
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name1) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name1[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:09
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name1) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name1[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:31
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name2)	
+Parameters:
+@Name2[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:31
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ( NOT [T_Student].[Name] = @Name2)	
+Parameters:
+@Name2[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:31
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name2) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name2[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:31
+Text:	 SELECT   * FROM [T_Student]  WHERE ( NOT [T_Student].[Name] = @Name2) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name2[String] = 1
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:47
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:47
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:47
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:47
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:48
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name1)	
+Parameters:
+@Name1[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:48
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name1)	
+Parameters:
+@Name1[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:48
+Text:	 SELECT   * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name1) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name1[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:48
+Text:	 SELECT   * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name1) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name1[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:50
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name2)	
+Parameters:
+@Name2[String] = %22%
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:50
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name2)	
+Parameters:
+@Name2[String] = %22%
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:50
+Text:	 SELECT   * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name2) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name2[String] = %22%
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:50
+Text:	 SELECT   * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name2) ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+Parameters:
+@Name2[String] = %22%
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:52
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:52
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:52
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------
+2016-06-21 09:37:52
+Text:	 SELECT   * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC  limit 0,5	
+
+
+-----------------------------------------------------------------------------

@@ -16,7 +16,22 @@
             <param name="str"></param>
             <returns></returns>
         </member>
+        <member name="M:Dos.Common.CommonExpand.DosIsNullOrWhiteSpace(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
         <member name="M:Dos.Common.CommonExpand.DosTrim(System.String,System.Char[])">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <param name="trimChars"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.Common.CommonExpand.DosReplace(System.String,System.String,System.String)">
             <summary>
             
             </summary>
@@ -82,7 +97,7 @@
             <param name="idCard"></param>
             <returns></returns>
         </member>
-        <member name="M:Dos.Common.CommonExpand.DosIsIP(System.String)">
+        <member name="M:Dos.Common.CommonExpand.DosIsIp(System.String)">
             <summary>
             
             </summary>
@@ -124,6 +139,12 @@
             通用Helper
             </summary>
         </member>
+        <member name="M:Dos.Common.CommonHelper.GetFullPath">
+            <summary>
+            获取当前项目完整路径，如D:\Web\
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:Dos.Common.CommonHelper.GetChineseSpell(System.String)">
             <summary>
             获取汉字首字母（可包含多个汉字）
@@ -148,24 +169,14 @@
             取三个数中的最小值
             </summary>
         </member>
-        <member name="T:Dos.Common.CommonHelper.SimilarityResult">
+        <member name="F:Dos.Common.EnumHelper.HttpParamType.Json">
             <summary>
-            计算结果
+            json数据。默认值。
             </summary>
         </member>
-        <member name="F:Dos.Common.CommonHelper.SimilarityResult.Rate">
+        <member name="F:Dos.Common.EnumHelper.HttpParamType.Form">
             <summary>
-            相似度，0.54即54%。
-            </summary>
-        </member>
-        <member name="F:Dos.Common.CommonHelper.SimilarityResult.ComputeTimes">
-            <summary>
-            对比次数
-            </summary>
-        </member>
-        <member name="F:Dos.Common.CommonHelper.SimilarityResult.ExeTime">
-            <summary>
-            执行时间，毫秒
+            形如：key=value＆key=value＆key=value
             </summary>
         </member>
         <member name="T:Dos.Common.Types">
@@ -368,6 +379,436 @@
             IDictionary 类型
             </summary>
         </member>
+        <member name="T:EmitMapper.AST.Nodes.AstIfNull">
+            <summary>
+            Generates "value ?? ifNullValue" expression.
+            </summary>
+        </member>
+        <member name="T:EmitMapper.MappingConfiguration.ICustomConverterProvider">
+            <summary>
+            Provider for getting detailed information about generic conversion
+            </summary>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.ICustomConverterProvider.GetCustomConverterDescr(System.Type,System.Type,EmitMapper.MappingConfiguration.MapConfigBaseImpl)">
+            <summary>
+            Getting detailed information about generic conversion
+            </summary>
+            <Param name="from">Type of source. Can be also generic class or abstract array.</Param>
+            <Param name="to">Type of destination. Can be also generic class or abstract array.</Param>
+            <Param name="mappingConfig">Current mapping configuration</Param>
+            <returns></returns>
+        </member>
+        <member name="T:EmitMapper.DynamicAssemblyManager">
+            <summary>
+            Class which maintains an assembly for created object Mappers
+            </summary>
+        </member>
+        <member name="M:EmitMapper.DynamicAssemblyManager.SaveAssembly">
+            <summary>
+            Saves assembly with created Mappers to file. This method is useful for debugging purpose.
+            </summary>
+        </member>
+        <member name="M:EmitMapper.EmitBuilders.BuilderUtils.InitializeLocal(System.Reflection.Emit.LocalBuilder,System.Int32)">
+            <summary>
+            Copies an argument to local variable
+            </summary>
+            <Param name="loc"></Param>
+            <Param name="argIndex"></Param>
+            <returns></returns>
+        </member>
+        <member name="T:EmitMapper.Mappers.ObjectsMapperBaseImpl">
+            <summary>
+            Base class for Mappers
+            </summary>
+        </member>
+        <member name="M:EmitMapper.Mappers.ObjectsMapperBaseImpl.Map(System.Object,System.Object,System.Object)">
+            <summary>
+            Copies object properties and members of "from" to object "to"
+            </summary>
+            <Param name="from">Source object</Param>
+            <Param name="to">Destination object</Param>
+            <returns>Destination object</returns>
+        </member>
+        <member name="M:EmitMapper.Mappers.ObjectsMapperBaseImpl.Map(System.Object)">
+            <summary>
+            Creates new instance of destination object and initializes it by values from "from" object
+            </summary>
+            <Param name="from">source object</Param>
+            <returns></returns>
+        </member>
+        <member name="F:EmitMapper.Mappers.ObjectsMapperBaseImpl.mapperMannager">
+            <summary>
+            Mapper manager
+            </summary>
+        </member>
+        <member name="F:EmitMapper.Mappers.ObjectsMapperBaseImpl.typeFrom">
+            <summary>
+            Type of source object
+            </summary>
+        </member>
+        <member name="F:EmitMapper.Mappers.ObjectsMapperBaseImpl.typeTo">
+            <summary>
+            Type of destination object
+            </summary>
+        </member>
+        <member name="F:EmitMapper.Mappers.ObjectsMapperBaseImpl.ShallowCopy">
+            <summary>
+            True, if reference properties and members of same type should
+            be copied by reference (shallow copy, without creating new instance for destination object)
+            </summary>
+        </member>
+        <member name="M:EmitMapper.Mappers.ObjectsMapperBaseImpl.MapImpl(System.Object,System.Object,System.Object)">
+            <summary>
+            Copies object properties and members of "from" to object "to"
+            </summary>
+            <Param name="from">Source object</Param>
+            <Param name="to">Destination object</Param>
+            <returns>Destination object</returns>
+        </member>
+        <member name="M:EmitMapper.Mappers.ObjectsMapperBaseImpl.CreateTargetInstance">
+            <summary>
+            Creates an instance of destination object
+            </summary>
+            <returns>Destination object</returns>
+        </member>
+        <member name="T:EmitMapper.Mappers.MapperForClassImpl">
+            <summary>
+            Mapper for classes
+            </summary>
+        </member>
+        <!-- 对于成员“T:EmitMapper.Mappers.MapperForCollectionImpl”忽略有格式错误的 XML 注释 -->
+        <member name="M:EmitMapper.Mappers.MapperForCollectionImpl.MapImpl(System.Object,System.Object,System.Object)">
+            <summary>
+            Copies object properties and members of "from" to object "to"
+            </summary>
+            <Param name="from">Source object</Param>
+            <Param name="to">Destination object</Param>
+            <returns>Destination object</returns>
+        </member>
+        <member name="M:EmitMapper.Mappers.MapperForCollectionImpl.Map(System.Object,System.Object,System.Object)">
+            <summary>
+            Copies object properties and members of "from" to object "to"
+            </summary>
+            <Param name="from">Source object</Param>
+            <Param name="to">Destination object</Param>
+            <returns>Destination object</returns>
+        </member>
+        <member name="M:EmitMapper.Mappers.MapperForCollectionImpl.IsSupportedType(System.Type)">
+            <summary>
+            Returns true if specified type is supported by this Mapper
+            </summary>
+            <Param name="type"></Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.Mappers.MapperForCollectionImpl.CreateInstance(System.String,EmitMapper.ObjectMapperManager,System.Type,System.Type,EmitMapper.ObjectsMapperDescr,EmitMapper.IMappingConfigurator)">
+            <summary>
+            Creates an instance of Mapper for collections.
+            </summary>
+            <Param name="MapperName">Mapper name. It is used for registration in Mappers repositories.</Param>
+            <Param name="mapperMannager">Mappers manager</Param>
+            <Param name="TypeFrom">Source type</Param>
+            <Param name="TypeTo">Destination type</Param>
+            <Param name="SubMapper"></Param>
+            <returns></returns>
+        </member>
+        <member name="T:EmitObjectMapper.Mappers.MapperPrimitiveImpl">
+            <summary>
+            Mapper for primitive objects
+            </summary>
+        </member>
+        <member name="M:EmitObjectMapper.Mappers.MapperPrimitiveImpl.MapImpl(System.Object,System.Object,System.Object)">
+            <summary>
+            Copies object properties and members of "from" to object "to"
+            </summary>
+            <Param name="from">Source object</Param>
+            <Param name="to">Destination object</Param>
+            <returns>Destination object</returns>
+        </member>
+        <member name="M:EmitObjectMapper.Mappers.MapperPrimitiveImpl.CreateTargetInstance">
+            <summary>
+            Creates an instance of destination object
+            </summary>
+            <returns>Destination object</returns>
+        </member>
+        <member name="T:EmitMapper.MappingConfiguration.CustomConverterDescriptor">
+            <summary>
+            Detailed description of a generic converter. 
+            </summary>
+        </member>
+        <member name="P:EmitMapper.MappingConfiguration.CustomConverterDescriptor.ConverterImplementation">
+            <summary>
+            Type of class which performs conversion. This class can be generic which will be parameterized with types 
+            returned from "ConverterClassTypeArguments" property.
+            </summary>
+        </member>
+        <member name="P:EmitMapper.MappingConfiguration.CustomConverterDescriptor.ConversionMethodName">
+            <summary>
+            Name of conversion method of class returned from "ConverterImplementation" property.
+            </summary>
+        </member>
+        <member name="P:EmitMapper.MappingConfiguration.CustomConverterDescriptor.ConverterClassTypeArguments">
+            <summary>
+            Type arguments for parameterizing generic converter determined by "ConverterImplementation" property.
+            </summary>
+        </member>
+        <member name="M:EmitMapper.IMappingConfigurator.GetMappingOperations(System.Type,System.Type)">
+            <summary>
+            Get list of mapping operations. Each mapping mapping defines one copieng operation from source to destination. For this operation can be additionally defined the following custom operations: 
+            - Custom getter which extracts values from source
+            - Custom values converter which converts extracted from source value
+            - Custom setter which writes value to destination
+            </summary>
+            <Param name="from">Source type</Param>
+            <Param name="to">Destination type</Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.IMappingConfigurator.GetConfigurationName">
+            <summary>
+            Get unique configuration name to force Emit Mapper create new mapper instead using appropriate cached one.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.MapConfigBaseImpl.ConvertUsing``2(System.Func{``0,``1})">
+            <summary>
+            Define custom type converter
+            </summary>
+            <typeparam name="From">Source type</typeparam>
+            <typeparam name="To">Destination type</typeparam>
+            <Param name="converter">Function which converts an inctance of the source type to an instance of the destination type</Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.MapConfigBaseImpl.ConvertGeneric(System.Type,System.Type,EmitMapper.MappingConfiguration.ICustomConverterProvider)">
+            <summary>
+            Define conversion for a generic. It is able to convert not one particular class but all generic family
+            providing a generic converter.
+            </summary>
+            <Param name="from">Type of source. Can be also generic class or abstract array.</Param>
+            <Param name="to">Type of destination. Can be also generic class or abstract array.</Param>
+            <Param name="converterProvider">Provider for getting detailed information about generic conversion</Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.MapConfigBaseImpl.NullSubstitution``2(System.Func{System.Object,``1})">
+            <summary>
+            Setup function which returns value for destination if appropriate source member is null. 
+            </summary>
+            <typeparam name="TFrom">Type of source member</typeparam>
+            <typeparam name="TTo">Type of destination member</typeparam>
+            <Param name="nullSubstitutor">Function which returns value for destination if appropriate source member is null</Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.MapConfigBaseImpl.IgnoreMembers(System.Type,System.Type,System.String[])">
+            <summary>
+            Define members which should be ingored
+            </summary>
+            <Param name="typeFrom">Source type for which ignore members are defining</Param>
+            <Param name="typeTo">Destination type for which ignore members are defining</Param>
+            <Param name="ignoreNames">Array of member names which should be ingored</Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.MapConfigBaseImpl.IgnoreMembers``2(System.String[])">
+            <summary>
+            Define members which should be ingored
+            </summary>
+            <typeparam name="TFrom">Source type for which ignore members are defining</typeparam>
+            <typeparam name="TTo">Destination type for which ignore members are defining</typeparam>
+            <Param name="ignoreNames">Array of member names which should be ingored</Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.MapConfigBaseImpl.ConstructBy``1(EmitMapper.MappingConfiguration.MappingOperations.TargetConstructor{``0})">
+            <summary>
+            Define a custom constructor for the specified type
+            </summary>
+            <typeparam name="T">Type for which constructor is defining</typeparam>
+            <Param name="constructor">Custom constructor</Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.MapConfigBaseImpl.PostProcess``1(EmitMapper.MappingConfiguration.MappingOperations.ValuesPostProcessor{``0})">
+            <summary>
+            Define postprocessor for specified type
+            </summary>
+            <typeparam name="T">Objects of this type and all it's descendants will be postprocessed</typeparam>
+            <Param name="postProcessor"></Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.MapConfigBaseImpl.SetConfigName(System.String)">
+            <summary>
+            Set unique configuration name to force Emit Mapper create new mapper instead using appropriate cached one.
+            </summary>
+            <Param name="mapperName">Configuration name</Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.MapConfigBase`1.ConvertUsing``2(System.Func{``0,``1})">
+            <summary>
+            Define custom type converter
+            </summary>
+            <typeparam name="From">Source type</typeparam>
+            <typeparam name="To">Destination type</typeparam>
+            <Param name="converter">Function which converts an inctance of the source type to an instance of the destination type</Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.MapConfigBase`1.ConvertGeneric(System.Type,System.Type,EmitMapper.MappingConfiguration.ICustomConverterProvider)">
+            <summary>
+            Define conversion for a generic. It is able to convert not one particular class but all generic family
+            providing a generic converter.
+            </summary>
+            <Param name="from">Type of source. Can be also generic class or abstract array.</Param>
+            <Param name="to">Type of destination. Can be also generic class or abstract array.</Param>
+            <Param name="converterProvider">
+            Provider for getting detailed information about generic conversion.
+            </Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.MapConfigBase`1.NullSubstitution``2(System.Func{System.Object,``1})">
+            <summary>
+            Setup function which returns value for destination if appropriate source member is null. 
+            </summary>
+            <typeparam name="TFrom">Type of source member</typeparam>
+            <typeparam name="TTo">Type of destination member</typeparam>
+            <Param name="nullSubstitutor">Function which returns value for destination if appropriate source member is null</Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.MapConfigBase`1.IgnoreMembers(System.Type,System.Type,System.String[])">
+            <summary>
+            Define members which should be ingored
+            </summary>
+            <Param name="typeFrom">Source type for which ignore members are defining</Param>
+            <Param name="typeTo">Destination type for which ignore members are defining</Param>
+            <Param name="ignoreNames">Array of member names which should be ingored</Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.MapConfigBase`1.IgnoreMembers``2(System.String[])">
+            <summary>
+            Define members which should be ingored
+            </summary>
+            <typeparam name="TFrom">Source type for which ignore members are defining</typeparam>
+            <typeparam name="TTo">Destination type for which ignore members are defining</typeparam>
+            <Param name="ignoreNames">Array of member names which should be ingored</Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.MapConfigBase`1.ConstructBy``1(EmitMapper.MappingConfiguration.MappingOperations.TargetConstructor{``0})">
+            <summary>
+            Define a custom constructor for the specified type
+            </summary>
+            <typeparam name="T">Type for which constructor is defining</typeparam>
+            <Param name="constructor">Custom constructor</Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.MapConfigBase`1.PostProcess``1(EmitMapper.MappingConfiguration.MappingOperations.ValuesPostProcessor{``0})">
+            <summary>
+            Define postprocessor for specified type
+            </summary>
+            <typeparam name="T">Objects of this type and all it's descendants will be postprocessed</typeparam>
+            <Param name="postProcessor"></Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.MapConfigBase`1.SetConfigName(System.String)">
+            <summary>
+            Set unique configuration name to force Emit Mapper create new mapper instead using appropriate cached one.
+            </summary>
+            <Param name="mapperName">Configuration name</Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.DefaultMapConfig.ShallowMap``1">
+            <summary>
+            Define shallow map mode for the specified type. In that case all members of this type will be copied by reference if it is possible
+            </summary>
+            <typeparam name="T">Type for which shallow map mode is defining</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.DefaultMapConfig.ShallowMap(System.Type)">
+            <summary>
+            Define shallow map mode for the specified type. In that case all members of this type will be copied by reference if it is possible
+            </summary>
+            <Param name="type">Type for which shallow map mode is defining</Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.DefaultMapConfig.ShallowMap">
+            <summary>
+            Define default shallow map mode. In that case all members will be copied by reference (if it is possible) by default.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.DefaultMapConfig.DeepMap``1">
+            <summary>
+            Define deep map mode for the specified type. In that case all members of this type will be copied by value (new instances will be created)
+            </summary>
+            <typeparam name="T">Type for which deep map mode is defining</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.DefaultMapConfig.DeepMap(System.Type)">
+            <summary>
+            Define deep map mode for the specified type. In that case all members of this type will be copied by value (new instances will be created)
+            </summary>
+            <Param name="type">Type for which deep map mode is defining</Param>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.DefaultMapConfig.DeepMap">
+            <summary>
+            Define default deep map mode. In that case all members will be copied by value (new instances will be created) by default
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.MappingConfiguration.DefaultMapConfig.MatchMembers(System.Func{System.String,System.String,System.Boolean})">
+            <summary>
+            Define a function to test two members if they have identical names.
+            </summary>
+            <Param name="membersMatcher">Function to test two members if they have identical names. For example if you want to match members ignoring case you can define the following function: (m1, m2) => m1.ToUpper() == m2.ToUpper()</Param>
+            <returns></returns>
+        </member>
+        <member name="T:EmitMapper.MappingConfiguration.MappingOperations.ReadWriteComplex">
+            <summary>
+            Generates the following code:
+            var tempSrc = Source.member;
+            if(tempSrc == null)
+            {
+                Destination.member = null;
+            }
+            else
+            {
+                var tempDst = Destination.member;
+                if(tempDst == null)
+                {
+                    tempDst = new DestinationMemberType();
+                }
+                // Operations:
+                tempDst.fld1 = tempSrc.fld1;
+                tempDst.fld2 = tempSrc.fld2;
+                ...
+                Destination.member = tempDst;
+            }
+            </summary>
+        </member>
+        <member name="T:EmitMapper.ObjectMapperManager">
+            <summary>
+            Class for maintaining and generating Mappers.
+            </summary>
+        </member>
+        <member name="M:EmitMapper.ObjectMapperManager.GetMapper``2">
+            <summary>
+            Returns a Mapper instance for specified types.
+            </summary>
+            <typeparam name="TFrom">Type of source object</typeparam>
+            <typeparam name="TTo">Type of destination object</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:EmitMapper.ObjectMapperManager.GetMapper``2(EmitMapper.IMappingConfigurator)">
+            <summary>
+            Returns a Mapper instance for specified types.
+            </summary>
+            <typeparam name="TFrom">Type of source object</typeparam>
+            <typeparam name="TTo">Type of destination object</typeparam>
+            <Param name="mappingConfigurator">Object which configures mapping.</Param>
+            <returns>Mapper</returns>
+        </member>
+        <member name="M:EmitMapper.ObjectMapperManager.GetMapperImpl(System.Type,System.Type,EmitMapper.IMappingConfigurator)">
+            <summary>
+            Returns a mapper implementation instance for specified types.
+            </summary>
+            <Param name="from">Type of source object</Param>
+            <Param name="to">Type of destination object</Param>
+            <Param name="mappingConfigurator">Object which configures mapping.</Param>
+            <returns>Mapper</returns>
+        </member>
         <member name="T:Dos.Common.Helper.StringHelper">
             <summary>
             字符串帮助类
@@ -387,243 +828,49 @@
             <Param name="length">获取的字节长度</Param>
             <returns></returns>
         </member>
-        <member name="F:Dos.Common.JSONParameters.UseOptimizedDatasetSchema">
+        <member name="M:Dos.Common.Helper.StringHelper.GetChineseSpell(System.String)">
             <summary>
-            Use the optimized fast Dataset Schema format (default = True)
+            获取汉字首字母（可包含多个汉字）
             </summary>
-        </member>
-        <member name="F:Dos.Common.JSONParameters.UseFastGuid">
-            <summary>
-            Use the fast GUID format (default = True)
-            </summary>
-        </member>
-        <member name="F:Dos.Common.JSONParameters.SerializeNullValues">
-            <summary>
-            Serialize null values to the output (default = True)
-            </summary>
-        </member>
-        <member name="F:Dos.Common.JSONParameters.UseUTCDateTime">
-            <summary>
-            Use the UTC date format (default = True)
-            </summary>
-        </member>
-        <member name="F:Dos.Common.JSONParameters.ShowReadOnlyProperties">
-            <summary>
-            Show the readonly properties of types in the output (default = False)
-            </summary>
-        </member>
-        <member name="F:Dos.Common.JSONParameters.UsingGlobalTypes">
-            <summary>
-            Use the $types extension to optimise the output json (default = True)
-            </summary>
-        </member>
-        <member name="F:Dos.Common.JSONParameters.IgnoreCaseOnDeserialize">
-            <summary>
-            Ignore case when processing json and deserializing 
-            </summary>
-        </member>
-        <member name="F:Dos.Common.JSONParameters.EnableAnonymousTypes">
-            <summary>
-            Anonymous types have read only properties 
-            </summary>
-        </member>
-        <member name="F:Dos.Common.JSONParameters.UseExtensions">
-            <summary>
-            Enable fastJSON extensions $types, $type, $map (default = True)
-            </summary>
-        </member>
-        <member name="F:Dos.Common.JSONParameters.UseEscapedUnicode">
-            <summary>
-            Use escaped unicode i.e. \uXXXX format for non ASCII characters (default = True)
-            </summary>
-        </member>
-        <member name="F:Dos.Common.JSONParameters.KVStyleStringDictionary">
-            <summary>
-            Output string key dictionaries as "k"/"v" format (default = False) 
-            </summary>
-        </member>
-        <member name="F:Dos.Common.JSONParameters.UseValuesOfEnums">
-            <summary>
-            Output Enum values instead of names (default = False)
-            </summary>
-        </member>
-        <member name="F:Dos.Common.JSONParameters.IgnoreAttributes">
-            <summary>
-            Ignore attributes to check for (default : XmlIgnoreAttribute)
-            </summary>
-        </member>
-        <member name="F:Dos.Common.JSONParameters.ParametricConstructorOverride">
-            <summary>
-            If you have parametric and no default constructor for you classes (default = False)
-            
-            IMPORTANT NOTE : If True then all initial values within the class will be ignored and will be not set
-            </summary>
-        </member>
-        <member name="F:Dos.Common.JSONParameters.DateTimeMilliseconds">
-            <summary>
-            Serialize DateTime milliseconds i.e. yyyy-MM-dd HH:mm:ss.nnn (default = false)
-            </summary>
-        </member>
-        <member name="F:Dos.Common.JSONParameters.SerializerMaxDepth">
-            <summary>
-            Maximum depth for circular references in inline mode (default = 20)
-            </summary>
-        </member>
-        <member name="F:Dos.Common.JSONParameters.InlineCircularReferences">
-            <summary>
-            Inline circular or already seen objects instead of replacement with $i (default = False) 
-            </summary>
-        </member>
-        <member name="F:Dos.Common.JSONParameters.SerializeToLowerCaseNames">
-            <summary>
-            Save property/field names as lowercase (default = false)
-            </summary>
-        </member>
-        <member name="F:Dos.Common.JSON.Parameters">
-            <summary>
-            Globally set-able parameters for controlling the serializer
-            </summary>
-        </member>
-        <member name="M:Dos.Common.JSON.ToNiceJSON(System.Object,Dos.Common.JSONParameters)">
-            <summary>
-            Create a formatted json string (beautified) from an object
-            </summary>
-            <param name="obj"></param>
-            <param name="param"></param>
+            <Param name="strText"></Param>
             <returns></returns>
         </member>
-        <member name="M:Dos.Common.JSON.ToJSON(System.Object)">
+        <member name="M:Dos.Common.Helper.StringHelper.GetInitial(System.String)">
             <summary>
-            Create a json representation for an object
+            获取第一个汉字的首字母，只能输入汉字
             </summary>
-            <param name="obj"></param>
+            <Param name="c"></Param>
             <returns></returns>
         </member>
-        <member name="M:Dos.Common.JSON.ToJSON(System.Object,Dos.Common.JSONParameters)">
+        <member name="M:Dos.Common.Helper.StringHelper.SimilarityRate(System.String,System.String)">
             <summary>
-            Create a json representation for an object with parameter override on this call
-            </summary>
-            <param name="obj"></param>
-            <param name="param"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Dos.Common.JSON.Parse(System.String)">
-            <summary>
-            Parse a json string and generate a Dictionary&lt;string,object&gt; or List&lt;object&gt; structure
-            </summary>
-            <param name="json"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Dos.Common.JSON.ToObject``1(System.String)">
-            <summary>
-            Create a typed generic object from the json
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="json"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Dos.Common.JSON.ToObject``1(System.String,Dos.Common.JSONParameters)">
-            <summary>
-            Create a typed generic object from the json with parameter override on this call
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="json"></param>
-            <param name="param"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Dos.Common.JSON.ToObject(System.String)">
-            <summary>
-            Create an object from the json
-            </summary>
-            <param name="json"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Dos.Common.JSON.ToObject(System.String,Dos.Common.JSONParameters)">
-            <summary>
-            Create an object from the json with parameter override on this call
-            </summary>
-            <param name="json"></param>
-            <param name="param"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Dos.Common.JSON.ToObject(System.String,System.Type)">
-            <summary>
-            Create an object of type from the json
-            </summary>
-            <param name="json"></param>
-            <param name="type"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Dos.Common.JSON.FillObject(System.Object,System.String)">
-            <summary>
-            Fill a given object with the json represenation
-            </summary>
-            <param name="input"></param>
-            <param name="json"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Dos.Common.JSON.DeepCopy(System.Object)">
-            <summary>
-            Deep copy an object i.e. clone to a new object
-            </summary>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Dos.Common.JSON.DeepCopy``1(``0)">
-            <summary>
-            
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Dos.Common.JSON.Beautify(System.String)">
-            <summary>
-            Create a human readable string from the json 
-            </summary>
-            <param name="input"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Dos.Common.JSON.RegisterCustomType(System.Type,Dos.Common.Serialize,Dos.Common.Deserialize)">
-            <summary>
-            Register custom type handlers for your own types not natively handled by fastJSON
-            </summary>
-            <param name="type"></param>
-            <param name="serializer"></param>
-            <param name="deserializer"></param>
-        </member>
-        <member name="M:Dos.Common.JSON.ClearReflectionCache">
-            <summary>
-            Clear the internal reflection cache so you can start from new (you will loose performance)
+            计算相似度。
             </summary>
         </member>
-        <member name="T:Dos.Common.JsonParser">
+        <member name="M:Dos.Common.Helper.StringHelper.Minimum(System.Int32,System.Int32,System.Int32)">
             <summary>
-            This class encodes and decodes JSON strings.
-            Spec. details, see http://www.json.org/
+            取三个数中的最小值
             </summary>
         </member>
-        <member name="T:Dos.Common.JsonProp">
+        <member name="T:Dos.Common.Helper.StringHelper.SimilarityResult">
             <summary>
-            
+            计算结果
             </summary>
         </member>
-        <member name="P:Dos.Common.JsonProp.PropertyName">
+        <member name="F:Dos.Common.Helper.StringHelper.SimilarityResult.Rate">
             <summary>
-            Gets or sets the name of the property.
-            </summary>
-            <value>The name of the property.</value>
-        </member>
-        <member name="M:Dos.Common.JsonProp.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Dos.Common.JsonProp"/> class.
+            相似度，0.54即54%。
             </summary>
         </member>
-        <member name="M:Dos.Common.JsonProp.#ctor(System.String)">
+        <member name="F:Dos.Common.Helper.StringHelper.SimilarityResult.ComputeTimes">
             <summary>
-            Initializes a new instance of the <see cref="T:Dos.Common.JsonProp"/> class with the specified name.
+            对比次数
             </summary>
-            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="F:Dos.Common.Helper.StringHelper.SimilarityResult.ExeTime">
+            <summary>
+            执行时间，毫秒
+            </summary>
         </member>
         <member name="T:Dos.Common.CacheHelper">
             <summary>
@@ -750,7 +997,7 @@
             通用转换类
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Dos.Common.ConvertHelper.EnumToDictionary(System.Type)" -->
+        <!-- 对于成员“M:Dos.Common.ConvertHelper.EnumToDictionary(System.Type)”忽略有格式错误的 XML 注释 -->
         <member name="T:Dos.Common.CookieHelper">
             <summary>
             Cookie操作类
@@ -852,11 +1099,11 @@
             </summary>
         </member>
         <member name="M:Dos.Common.FileHelper.Read(System.String,System.Text.Encoding)">
-            <summary>
-            从文件中读取所有内容。（如果文件不存在，返回空字符串）
-            </summary>
-            <Param name="filePath">完整路径，如D:\Temp\Temp.json</Param>
-            <returns></returns>
+             <summary>
+             从文件中读取所有内容。（如果文件不存在，返回空字符串）。
+            <para>filePath：完整路径，如D:\Temp\Temp.json</para>
+             </summary>
+             <returns></returns>
         </member>
         <member name="M:Dos.Common.FileHelper.Write(System.String,System.String,System.Text.Encoding)">
             <summary>
@@ -1194,6 +1441,26 @@
             </summary>
             <typeparam name="T"></typeparam>
         </member>
+        <member name="T:Dos.Common.MsmqParam">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="F:Dos.Common.MsmqParam._queuePath">
+            <summary>
+            队列名称
+            </summary>
+        </member>
+        <member name="P:Dos.Common.MsmqParam.QueueName">
+            <summary>
+            队列名称
+            </summary>
+        </member>
+        <member name="P:Dos.Common.MsmqParam.QueuePath">
+            <summary>
+            路径
+            </summary>
+        </member>
         <member name="P:Dos.Common.MsmqParam`1.Message">
             <summary>
             
@@ -1202,26 +1469,6 @@
         <member name="P:Dos.Common.MsmqParam`1.CallBack">
             <summary>
             callBack
-            </summary>
-        </member>
-        <member name="T:Dos.Common.MsmqParam">
-            <summary>
-            参数
-            </summary>
-        </member>
-        <member name="P:Dos.Common.MsmqParam.QueueName">
-            <summary>
-            队列名称
-            </summary>
-        </member>
-        <member name="F:Dos.Common.MsmqParam._queuePath">
-            <summary>
-            队列名称
-            </summary>
-        </member>
-        <member name="P:Dos.Common.MsmqParam.QueuePath">
-            <summary>
-            路径
             </summary>
         </member>
         <member name="T:Dos.Common.RegexHelper">
@@ -1332,6 +1579,52 @@
             图片水印处理类
             </summary>
         </member>
+        <member name="M:Dos.Common.ImageHelper.GetImageFormat(System.String)">
+            <summary>
+            获取图片格式。
+            </summary>
+            <Param name="fileName">文件名</Param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.Common.ImageHelper.MakeWaterImage(System.IO.Stream,System.String,System.String,System.String,System.Int32,Dos.Common.ImageHelper.WaterPositionOption)">
+            <summary>
+            加水印图片并保存。
+            </summary>
+            <Param name="originalImageStream">Stream</Param>
+            <Param name="strFileName">源图路径（物理路径）</Param>
+            <Param name="savePath">图片保存路径（物理路径）</Param>
+            <Param name="waterPath">水印图路径（物理路径）</Param>
+            <Param name="edge">水印图离原图边界的距离</Param>
+            <Param name="position">加图片水印的位置</Param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:Dos.Common.ImageHelper.MakeThumbnail(System.IO.Stream,System.String,System.String,System.Int32,System.Int32,Dos.Common.ImageHelper.ThumbnailModeOption)">
+            <summary>
+            生成缩略图并保存。
+            </summary>
+            <Param name="originalImageStream">Stream</Param>
+            <Param name="strFileName">源图路径（物理路径）</Param>
+            <Param name="thumbnailPath">缩略图路径（物理路径）</Param>
+            <Param name="maxWidth">缩略图最大宽度</Param>
+            <Param name="maxheight">缩略图最大高度</Param>
+            <Param name="mode">生成缩略图的方式</Param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:Dos.Common.ImageHelper.MakeThumbnailWater(System.IO.Stream,System.String,System.String,System.Int32,System.Int32,Dos.Common.ImageHelper.ThumbnailModeOption,System.String,System.Int32,Dos.Common.ImageHelper.WaterPositionOption)">
+            <summary>
+            生成缩略图并打水印再保存。
+            </summary>
+            <Param name="originalImageStream">Stream</Param>
+            <Param name="strFileName">源图路径（物理路径）</Param>
+            <Param name="thumbnailPath">缩略图路径（物理路径）</Param>
+            <Param name="maxWidth">缩略图最大宽度</Param>
+            <Param name="maxheight">缩略图最大高度</Param>
+            <Param name="mode">生成缩略图的方式</Param>
+            <Param name="waterPath">水印图路径（物理路径）</Param>
+            <Param name="edge">水印图离原图边界的距离</Param>
+            <Param name="position">加图片水印的位置</Param>
+            <returns>是否成功</returns>
+        </member>
         <member name="T:Dos.Common.ImageHelper.ThumbnailModeOption">
             <summary>
             生成缩略图的模式， WH-指定宽高缩放（可能变形） W-指定宽，高按比例  H-指定高，宽按比例 CUT-指定高宽裁减（不变形,推荐用这个）。
@@ -1397,51 +1690,263 @@
             正中间
             </summary>
         </member>
-        <member name="M:Dos.Common.ImageHelper.GetImageFormat(System.String)">
+        <member name="F:Dos.Common.JSONParameters.UseOptimizedDatasetSchema">
             <summary>
-            获取图片格式。
+            Use the optimized fast Dataset Schema format (default = True)
             </summary>
-            <Param name="fileName">文件名</Param>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.UseFastGuid">
+            <summary>
+            Use the fast GUID format (default = True)
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.SerializeNullValues">
+            <summary>
+            Serialize null values to the output (default = True)
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.UseStrictIsoDate">
+            <summary>
+            是否采用严格的ISO日期 (default = false)  by itdos.com
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.DateFormatString">
+            <summary>
+            日期格式化 (default = "yyyy-MM-dd HH:mm:ss")  by itdos.com
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.UseFalseLiteral">
+            <summary>
+            IsLiteral=false时是否序列化。(default = false)
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.UseUTCDateTime">
+            <summary>
+            Use the UTC date format (default = True)
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.ShowReadOnlyProperties">
+            <summary>
+            Show the readonly properties of types in the output (default = False)
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.UsingGlobalTypes">
+            <summary>
+            Use the $types extension to optimise the output json (default = True)
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.IgnoreCaseOnDeserialize">
+            <summary>
+            Ignore case when processing json and deserializing 
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.EnableAnonymousTypes">
+            <summary>
+            Anonymous types have read only properties 
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.UseExtensions">
+            <summary>
+            Enable fastJSON extensions $types, $type, $map (default = True)
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.UseEscapedUnicode">
+            <summary>
+            Use escaped unicode i.e. \uXXXX format for non ASCII characters (default = True)
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.KVStyleStringDictionary">
+            <summary>
+            Output string key dictionaries as "k"/"v" format (default = False) 
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.UseValuesOfEnums">
+            <summary>
+            Output Enum values instead of names (default = False)
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.IgnoreAttributes">
+            <summary>
+            Ignore attributes to check for (default : XmlIgnoreAttribute)
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.ParametricConstructorOverride">
+            <summary>
+            If you have parametric and no default constructor for you classes (default = False)
+            
+            IMPORTANT NOTE : If True then all initial values within the class will be ignored and will be not set
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.DateTimeMilliseconds">
+            <summary>
+            是否序列化DateTime毫秒。 yyyy-MM-dd HH:mm:ss.nnn (default = false)
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.SerializerMaxDepth">
+            <summary>
+            Maximum depth for circular references in inline mode (default = 20)
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.InlineCircularReferences">
+            <summary>
+            Inline circular or already seen objects instead of replacement with $i (default = False) 
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.SerializeToLowerCaseNames">
+            <summary>
+            Save property/field names as lowercase (default = false)
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSONParameters.DataTableToGeneralJson">
+            <summary>
+            DataTable类型是否默认序列化TableName (default = true) by itdos.com
+            </summary>
+        </member>
+        <member name="F:Dos.Common.JSON.Parameters">
+            <summary>
+            Globally set-able parameters for controlling the serializer
+            </summary>
+        </member>
+        <member name="M:Dos.Common.JSON.ToNiceJSON(System.Object,Dos.Common.JSONParameters)">
+            <summary>
+            Create a formatted json string (beautified) from an object
+            </summary>
+            <param name="obj"></param>
+            <param name="param"></param>
             <returns></returns>
         </member>
-        <member name="M:Dos.Common.ImageHelper.MakeWaterImage(System.IO.Stream,System.String,System.String,System.String,System.Int32,Dos.Common.ImageHelper.WaterPositionOption)">
+        <member name="M:Dos.Common.JSON.ToJSON(System.Object)">
             <summary>
-            加水印图片并保存。
+            Create a json representation for an object
             </summary>
-            <Param name="originalImageStream">Stream</Param>
-            <Param name="strFileName">源图路径（物理路径）</Param>
-            <Param name="savePath">图片保存路径（物理路径）</Param>
-            <Param name="waterPath">水印图路径（物理路径）</Param>
-            <Param name="edge">水印图离原图边界的距离</Param>
-            <Param name="position">加图片水印的位置</Param>
-            <returns>是否成功</returns>
+            <param name="obj"></param>
+            <returns></returns>
         </member>
-        <member name="M:Dos.Common.ImageHelper.MakeThumbnail(System.IO.Stream,System.String,System.String,System.Int32,System.Int32,Dos.Common.ImageHelper.ThumbnailModeOption)">
+        <member name="M:Dos.Common.JSON.ToJSON(System.Object,Dos.Common.JSONParameters)">
             <summary>
-            生成缩略图并保存。
+            Create a json representation for an object with parameter override on this call
             </summary>
-            <Param name="originalImageStream">Stream</Param>
-            <Param name="strFileName">源图路径（物理路径）</Param>
-            <Param name="thumbnailPath">缩略图路径（物理路径）</Param>
-            <Param name="maxWidth">缩略图最大宽度</Param>
-            <Param name="maxheight">缩略图最大高度</Param>
-            <Param name="mode">生成缩略图的方式</Param>
-            <returns>是否成功</returns>
+            <param name="obj"></param>
+            <param name="param"></param>
+            <returns></returns>
         </member>
-        <member name="M:Dos.Common.ImageHelper.MakeThumbnailWater(System.IO.Stream,System.String,System.String,System.Int32,System.Int32,Dos.Common.ImageHelper.ThumbnailModeOption,System.String,System.Int32,Dos.Common.ImageHelper.WaterPositionOption)">
+        <member name="M:Dos.Common.JSON.Parse(System.String)">
             <summary>
-            生成缩略图并打水印再保存。
+            Parse a json string and generate a Dictionary&lt;string,object&gt; or List&lt;object&gt; structure
             </summary>
-            <Param name="originalImageStream">Stream</Param>
-            <Param name="strFileName">源图路径（物理路径）</Param>
-            <Param name="thumbnailPath">缩略图路径（物理路径）</Param>
-            <Param name="maxWidth">缩略图最大宽度</Param>
-            <Param name="maxheight">缩略图最大高度</Param>
-            <Param name="mode">生成缩略图的方式</Param>
-            <Param name="waterPath">水印图路径（物理路径）</Param>
-            <Param name="edge">水印图离原图边界的距离</Param>
-            <Param name="position">加图片水印的位置</Param>
-            <returns>是否成功</returns>
+            <param name="json"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.Common.JSON.ToObject``1(System.String)">
+            <summary>
+            Create a typed generic object from the json
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="json"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.Common.JSON.ToObject``1(System.String,Dos.Common.JSONParameters)">
+            <summary>
+            Create a typed generic object from the json with parameter override on this call
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="json"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.Common.JSON.ToObject(System.String)">
+            <summary>
+            Create an object from the json
+            </summary>
+            <param name="json"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.Common.JSON.ToObject(System.String,Dos.Common.JSONParameters)">
+            <summary>
+            Create an object from the json with parameter override on this call
+            </summary>
+            <param name="json"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.Common.JSON.ToObject(System.String,System.Type)">
+            <summary>
+            Create an object of type from the json
+            </summary>
+            <param name="json"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.Common.JSON.FillObject(System.Object,System.String)">
+            <summary>
+            Fill a given object with the json represenation
+            </summary>
+            <param name="input"></param>
+            <param name="json"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.Common.JSON.DeepCopy(System.Object)">
+            <summary>
+            Deep copy an object i.e. clone to a new object
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.Common.JSON.DeepCopy``1(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.Common.JSON.Beautify(System.String)">
+            <summary>
+            Create a human readable string from the json 
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.Common.JSON.RegisterCustomType(System.Type,Dos.Common.Serialize,Dos.Common.Deserialize)">
+            <summary>
+            Register custom type handlers for your own types not natively handled by fastJSON
+            </summary>
+            <param name="type"></param>
+            <param name="serializer"></param>
+            <param name="deserializer"></param>
+        </member>
+        <member name="M:Dos.Common.JSON.ClearReflectionCache">
+            <summary>
+            Clear the internal reflection cache so you can start from new (you will loose performance)
+            </summary>
+        </member>
+        <member name="T:Dos.Common.JsonParser">
+            <summary>
+            This class encodes and decodes JSON strings.
+            Spec. details, see http://www.json.org/
+            </summary>
+        </member>
+        <member name="T:Dos.Common.JsonProp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Dos.Common.JsonProp.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Dos.Common.JsonProp"/> class.
+            </summary>
+        </member>
+        <member name="M:Dos.Common.JsonProp.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Dos.Common.JsonProp"/> class with the specified name.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="P:Dos.Common.JsonProp.PropertyName">
+            <summary>
+            Gets or sets the name of the property.
+            </summary>
+            <value>The name of the property.</value>
         </member>
         <member name="T:Dos.Common.BaseResult">
             <summary>
@@ -1708,12 +2213,17 @@
             
             </summary>
         </member>
+        <member name="P:Dos.Common.HttpParam.ParamType">
+            <summary>
+            参数类型。可选：Json、Form。默认Json。传入Form则会将new { Key1 = Value1, Key2 = Value2}转换成"key1=value1＆key2=value2"形式。
+            </summary>
+        </member>
         <member name="P:Dos.Common.HttpParam.PostParam">
             <summary>
             Post参数。
             <para>可以传入Json对像：new { Key1 = Value1, Key2 = Value2}</para>
             <para>可以传入Json字符串：{"Key1":"Value1","Key2":"Value2"}</para>
-            <para>可以传入key/value字符串："ke=value＆key=value"</para>
+            <para>可以传入key/value字符串："key1=value1＆key2=value2"</para>
             <para>可以传入xml字符串等等</para>
             </summary>
         </member>
@@ -1774,19 +2284,9 @@
             队列操作类
             </summary>
         </member>
-        <member name="T:Dos.Common.QueueHelper.QueueParam">
+        <member name="F:Dos.Common.QueueHelper.SleepNumber">
             <summary>
-            队列参数
-            </summary>
-        </member>
-        <member name="P:Dos.Common.QueueHelper.QueueParam.QueueCount">
-            <summary>
-            队列限制数量
-            </summary>
-        </member>
-        <member name="P:Dos.Common.QueueHelper.QueueParam.Pool">
-            <summary>
-            队列池
+            睡眠时间（毫秒）
             </summary>
         </member>
         <member name="F:Dos.Common.QueueHelper.Param">
@@ -1847,11 +2347,6 @@
             静态队列池
             </summary>
         </member>
-        <member name="F:Dos.Common.QueueHelper.SleepNumber">
-            <summary>
-            睡眠时间（毫秒）
-            </summary>
-        </member>
         <member name="M:Dos.Common.QueueHelper.StaticIn(System.String)">
             <summary>
             加入队列
@@ -1886,435 +2381,20 @@
             退出所有队列/释放所有资源
             </summary>
         </member>
-        <member name="T:EmitMapper.AST.Nodes.AstIfNull">
+        <member name="T:Dos.Common.QueueHelper.QueueParam">
             <summary>
-            Generates "value ?? ifNullValue" expression.
+            队列参数
             </summary>
         </member>
-        <member name="T:EmitMapper.DynamicAssemblyManager">
+        <member name="P:Dos.Common.QueueHelper.QueueParam.QueueCount">
             <summary>
-            Class which maintains an assembly for created object Mappers
+            队列限制数量
             </summary>
         </member>
-        <member name="M:EmitMapper.DynamicAssemblyManager.SaveAssembly">
+        <member name="P:Dos.Common.QueueHelper.QueueParam.Pool">
             <summary>
-            Saves assembly with created Mappers to file. This method is useful for debugging purpose.
+            队列池
             </summary>
-        </member>
-        <member name="M:EmitMapper.EmitBuilders.BuilderUtils.InitializeLocal(System.Reflection.Emit.LocalBuilder,System.Int32)">
-            <summary>
-            Copies an argument to local variable
-            </summary>
-            <Param name="loc"></Param>
-            <Param name="argIndex"></Param>
-            <returns></returns>
-        </member>
-        <member name="T:EmitMapper.Mappers.MapperForClassImpl">
-            <summary>
-            Mapper for classes
-            </summary>
-        </member>
-        <!-- Badly formed XML comment ignored for member "T:EmitMapper.Mappers.MapperForCollectionImpl" -->
-        <member name="M:EmitMapper.Mappers.MapperForCollectionImpl.MapImpl(System.Object,System.Object,System.Object)">
-            <summary>
-            Copies object properties and members of "from" to object "to"
-            </summary>
-            <Param name="from">Source object</Param>
-            <Param name="to">Destination object</Param>
-            <returns>Destination object</returns>
-        </member>
-        <member name="M:EmitMapper.Mappers.MapperForCollectionImpl.Map(System.Object,System.Object,System.Object)">
-            <summary>
-            Copies object properties and members of "from" to object "to"
-            </summary>
-            <Param name="from">Source object</Param>
-            <Param name="to">Destination object</Param>
-            <returns>Destination object</returns>
-        </member>
-        <member name="M:EmitMapper.Mappers.MapperForCollectionImpl.IsSupportedType(System.Type)">
-            <summary>
-            Returns true if specified type is supported by this Mapper
-            </summary>
-            <Param name="type"></Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.Mappers.MapperForCollectionImpl.CreateInstance(System.String,EmitMapper.ObjectMapperManager,System.Type,System.Type,EmitMapper.ObjectsMapperDescr,EmitMapper.IMappingConfigurator)">
-            <summary>
-            Creates an instance of Mapper for collections.
-            </summary>
-            <Param name="MapperName">Mapper name. It is used for registration in Mappers repositories.</Param>
-            <Param name="mapperMannager">Mappers manager</Param>
-            <Param name="TypeFrom">Source type</Param>
-            <Param name="TypeTo">Destination type</Param>
-            <Param name="SubMapper"></Param>
-            <returns></returns>
-        </member>
-        <member name="T:EmitMapper.Mappers.ObjectsMapperBaseImpl">
-            <summary>
-            Base class for Mappers
-            </summary>
-        </member>
-        <member name="M:EmitMapper.Mappers.ObjectsMapperBaseImpl.Map(System.Object,System.Object,System.Object)">
-            <summary>
-            Copies object properties and members of "from" to object "to"
-            </summary>
-            <Param name="from">Source object</Param>
-            <Param name="to">Destination object</Param>
-            <returns>Destination object</returns>
-        </member>
-        <member name="M:EmitMapper.Mappers.ObjectsMapperBaseImpl.Map(System.Object)">
-            <summary>
-            Creates new instance of destination object and initializes it by values from "from" object
-            </summary>
-            <Param name="from">source object</Param>
-            <returns></returns>
-        </member>
-        <member name="F:EmitMapper.Mappers.ObjectsMapperBaseImpl.mapperMannager">
-            <summary>
-            Mapper manager
-            </summary>
-        </member>
-        <member name="F:EmitMapper.Mappers.ObjectsMapperBaseImpl.typeFrom">
-            <summary>
-            Type of source object
-            </summary>
-        </member>
-        <member name="F:EmitMapper.Mappers.ObjectsMapperBaseImpl.typeTo">
-            <summary>
-            Type of destination object
-            </summary>
-        </member>
-        <member name="F:EmitMapper.Mappers.ObjectsMapperBaseImpl.ShallowCopy">
-            <summary>
-            True, if reference properties and members of same type should
-            be copied by reference (shallow copy, without creating new instance for destination object)
-            </summary>
-        </member>
-        <member name="M:EmitMapper.Mappers.ObjectsMapperBaseImpl.MapImpl(System.Object,System.Object,System.Object)">
-            <summary>
-            Copies object properties and members of "from" to object "to"
-            </summary>
-            <Param name="from">Source object</Param>
-            <Param name="to">Destination object</Param>
-            <returns>Destination object</returns>
-        </member>
-        <member name="M:EmitMapper.Mappers.ObjectsMapperBaseImpl.CreateTargetInstance">
-            <summary>
-            Creates an instance of destination object
-            </summary>
-            <returns>Destination object</returns>
-        </member>
-        <member name="T:EmitMapper.MappingConfiguration.CustomConverterDescriptor">
-            <summary>
-            Detailed description of a generic converter. 
-            </summary>
-        </member>
-        <member name="P:EmitMapper.MappingConfiguration.CustomConverterDescriptor.ConverterImplementation">
-            <summary>
-            Type of class which performs conversion. This class can be generic which will be parameterized with types 
-            returned from "ConverterClassTypeArguments" property.
-            </summary>
-        </member>
-        <member name="P:EmitMapper.MappingConfiguration.CustomConverterDescriptor.ConversionMethodName">
-            <summary>
-            Name of conversion method of class returned from "ConverterImplementation" property.
-            </summary>
-        </member>
-        <member name="P:EmitMapper.MappingConfiguration.CustomConverterDescriptor.ConverterClassTypeArguments">
-            <summary>
-            Type arguments for parameterizing generic converter determined by "ConverterImplementation" property.
-            </summary>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.DefaultMapConfig.ShallowMap``1">
-            <summary>
-            Define shallow map mode for the specified type. In that case all members of this type will be copied by reference if it is possible
-            </summary>
-            <typeparam name="T">Type for which shallow map mode is defining</typeparam>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.DefaultMapConfig.ShallowMap(System.Type)">
-            <summary>
-            Define shallow map mode for the specified type. In that case all members of this type will be copied by reference if it is possible
-            </summary>
-            <Param name="type">Type for which shallow map mode is defining</Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.DefaultMapConfig.ShallowMap">
-            <summary>
-            Define default shallow map mode. In that case all members will be copied by reference (if it is possible) by default.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.DefaultMapConfig.DeepMap``1">
-            <summary>
-            Define deep map mode for the specified type. In that case all members of this type will be copied by value (new instances will be created)
-            </summary>
-            <typeparam name="T">Type for which deep map mode is defining</typeparam>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.DefaultMapConfig.DeepMap(System.Type)">
-            <summary>
-            Define deep map mode for the specified type. In that case all members of this type will be copied by value (new instances will be created)
-            </summary>
-            <Param name="type">Type for which deep map mode is defining</Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.DefaultMapConfig.DeepMap">
-            <summary>
-            Define default deep map mode. In that case all members will be copied by value (new instances will be created) by default
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.DefaultMapConfig.MatchMembers(System.Func{System.String,System.String,System.Boolean})">
-            <summary>
-            Define a function to test two members if they have identical names.
-            </summary>
-            <Param name="membersMatcher">Function to test two members if they have identical names. For example if you want to match members ignoring case you can define the following function: (m1, m2) => m1.ToUpper() == m2.ToUpper()</Param>
-            <returns></returns>
-        </member>
-        <member name="T:EmitMapper.MappingConfiguration.ICustomConverterProvider">
-            <summary>
-            Provider for getting detailed information about generic conversion
-            </summary>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.ICustomConverterProvider.GetCustomConverterDescr(System.Type,System.Type,EmitMapper.MappingConfiguration.MapConfigBaseImpl)">
-            <summary>
-            Getting detailed information about generic conversion
-            </summary>
-            <Param name="from">Type of source. Can be also generic class or abstract array.</Param>
-            <Param name="to">Type of destination. Can be also generic class or abstract array.</Param>
-            <Param name="mappingConfig">Current mapping configuration</Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.MapConfigBase`1.ConvertUsing``2(System.Func{``0,``1})">
-            <summary>
-            Define custom type converter
-            </summary>
-            <typeparam name="From">Source type</typeparam>
-            <typeparam name="To">Destination type</typeparam>
-            <Param name="converter">Function which converts an inctance of the source type to an instance of the destination type</Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.MapConfigBase`1.ConvertGeneric(System.Type,System.Type,EmitMapper.MappingConfiguration.ICustomConverterProvider)">
-            <summary>
-            Define conversion for a generic. It is able to convert not one particular class but all generic family
-            providing a generic converter.
-            </summary>
-            <Param name="from">Type of source. Can be also generic class or abstract array.</Param>
-            <Param name="to">Type of destination. Can be also generic class or abstract array.</Param>
-            <Param name="converterProvider">
-            Provider for getting detailed information about generic conversion.
-            </Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.MapConfigBase`1.NullSubstitution``2(System.Func{System.Object,``1})">
-            <summary>
-            Setup function which returns value for destination if appropriate source member is null. 
-            </summary>
-            <typeparam name="TFrom">Type of source member</typeparam>
-            <typeparam name="TTo">Type of destination member</typeparam>
-            <Param name="nullSubstitutor">Function which returns value for destination if appropriate source member is null</Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.MapConfigBase`1.IgnoreMembers(System.Type,System.Type,System.String[])">
-            <summary>
-            Define members which should be ingored
-            </summary>
-            <Param name="typeFrom">Source type for which ignore members are defining</Param>
-            <Param name="typeTo">Destination type for which ignore members are defining</Param>
-            <Param name="ignoreNames">Array of member names which should be ingored</Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.MapConfigBase`1.IgnoreMembers``2(System.String[])">
-            <summary>
-            Define members which should be ingored
-            </summary>
-            <typeparam name="TFrom">Source type for which ignore members are defining</typeparam>
-            <typeparam name="TTo">Destination type for which ignore members are defining</typeparam>
-            <Param name="ignoreNames">Array of member names which should be ingored</Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.MapConfigBase`1.ConstructBy``1(EmitMapper.MappingConfiguration.MappingOperations.TargetConstructor{``0})">
-            <summary>
-            Define a custom constructor for the specified type
-            </summary>
-            <typeparam name="T">Type for which constructor is defining</typeparam>
-            <Param name="constructor">Custom constructor</Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.MapConfigBase`1.PostProcess``1(EmitMapper.MappingConfiguration.MappingOperations.ValuesPostProcessor{``0})">
-            <summary>
-            Define postprocessor for specified type
-            </summary>
-            <typeparam name="T">Objects of this type and all it's descendants will be postprocessed</typeparam>
-            <Param name="postProcessor"></Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.MapConfigBase`1.SetConfigName(System.String)">
-            <summary>
-            Set unique configuration name to force Emit Mapper create new mapper instead using appropriate cached one.
-            </summary>
-            <Param name="mapperName">Configuration name</Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.MapConfigBaseImpl.ConvertUsing``2(System.Func{``0,``1})">
-            <summary>
-            Define custom type converter
-            </summary>
-            <typeparam name="From">Source type</typeparam>
-            <typeparam name="To">Destination type</typeparam>
-            <Param name="converter">Function which converts an inctance of the source type to an instance of the destination type</Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.MapConfigBaseImpl.ConvertGeneric(System.Type,System.Type,EmitMapper.MappingConfiguration.ICustomConverterProvider)">
-            <summary>
-            Define conversion for a generic. It is able to convert not one particular class but all generic family
-            providing a generic converter.
-            </summary>
-            <Param name="from">Type of source. Can be also generic class or abstract array.</Param>
-            <Param name="to">Type of destination. Can be also generic class or abstract array.</Param>
-            <Param name="converterProvider">Provider for getting detailed information about generic conversion</Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.MapConfigBaseImpl.NullSubstitution``2(System.Func{System.Object,``1})">
-            <summary>
-            Setup function which returns value for destination if appropriate source member is null. 
-            </summary>
-            <typeparam name="TFrom">Type of source member</typeparam>
-            <typeparam name="TTo">Type of destination member</typeparam>
-            <Param name="nullSubstitutor">Function which returns value for destination if appropriate source member is null</Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.MapConfigBaseImpl.IgnoreMembers(System.Type,System.Type,System.String[])">
-            <summary>
-            Define members which should be ingored
-            </summary>
-            <Param name="typeFrom">Source type for which ignore members are defining</Param>
-            <Param name="typeTo">Destination type for which ignore members are defining</Param>
-            <Param name="ignoreNames">Array of member names which should be ingored</Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.MapConfigBaseImpl.IgnoreMembers``2(System.String[])">
-            <summary>
-            Define members which should be ingored
-            </summary>
-            <typeparam name="TFrom">Source type for which ignore members are defining</typeparam>
-            <typeparam name="TTo">Destination type for which ignore members are defining</typeparam>
-            <Param name="ignoreNames">Array of member names which should be ingored</Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.MapConfigBaseImpl.ConstructBy``1(EmitMapper.MappingConfiguration.MappingOperations.TargetConstructor{``0})">
-            <summary>
-            Define a custom constructor for the specified type
-            </summary>
-            <typeparam name="T">Type for which constructor is defining</typeparam>
-            <Param name="constructor">Custom constructor</Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.MapConfigBaseImpl.PostProcess``1(EmitMapper.MappingConfiguration.MappingOperations.ValuesPostProcessor{``0})">
-            <summary>
-            Define postprocessor for specified type
-            </summary>
-            <typeparam name="T">Objects of this type and all it's descendants will be postprocessed</typeparam>
-            <Param name="postProcessor"></Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.MappingConfiguration.MapConfigBaseImpl.SetConfigName(System.String)">
-            <summary>
-            Set unique configuration name to force Emit Mapper create new mapper instead using appropriate cached one.
-            </summary>
-            <Param name="mapperName">Configuration name</Param>
-            <returns></returns>
-        </member>
-        <member name="T:EmitMapper.MappingConfiguration.MappingOperations.ReadWriteComplex">
-            <summary>
-            Generates the following code:
-            var tempSrc = Source.member;
-            if(tempSrc == null)
-            {
-                Destination.member = null;
-            }
-            else
-            {
-                var tempDst = Destination.member;
-                if(tempDst == null)
-                {
-                    tempDst = new DestinationMemberType();
-                }
-                // Operations:
-                tempDst.fld1 = tempSrc.fld1;
-                tempDst.fld2 = tempSrc.fld2;
-                ...
-                Destination.member = tempDst;
-            }
-            </summary>
-        </member>
-        <member name="M:EmitMapper.IMappingConfigurator.GetMappingOperations(System.Type,System.Type)">
-            <summary>
-            Get list of mapping operations. Each mapping mapping defines one copieng operation from source to destination. For this operation can be additionally defined the following custom operations: 
-            - Custom getter which extracts values from source
-            - Custom values converter which converts extracted from source value
-            - Custom setter which writes value to destination
-            </summary>
-            <Param name="from">Source type</Param>
-            <Param name="to">Destination type</Param>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.IMappingConfigurator.GetConfigurationName">
-            <summary>
-            Get unique configuration name to force Emit Mapper create new mapper instead using appropriate cached one.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:EmitMapper.ObjectMapperManager">
-            <summary>
-            Class for maintaining and generating Mappers.
-            </summary>
-        </member>
-        <member name="M:EmitMapper.ObjectMapperManager.GetMapper``2">
-            <summary>
-            Returns a Mapper instance for specified types.
-            </summary>
-            <typeparam name="TFrom">Type of source object</typeparam>
-            <typeparam name="TTo">Type of destination object</typeparam>
-            <returns></returns>
-        </member>
-        <member name="M:EmitMapper.ObjectMapperManager.GetMapper``2(EmitMapper.IMappingConfigurator)">
-            <summary>
-            Returns a Mapper instance for specified types.
-            </summary>
-            <typeparam name="TFrom">Type of source object</typeparam>
-            <typeparam name="TTo">Type of destination object</typeparam>
-            <Param name="mappingConfigurator">Object which configures mapping.</Param>
-            <returns>Mapper</returns>
-        </member>
-        <member name="M:EmitMapper.ObjectMapperManager.GetMapperImpl(System.Type,System.Type,EmitMapper.IMappingConfigurator)">
-            <summary>
-            Returns a mapper implementation instance for specified types.
-            </summary>
-            <Param name="from">Type of source object</Param>
-            <Param name="to">Type of destination object</Param>
-            <Param name="mappingConfigurator">Object which configures mapping.</Param>
-            <returns>Mapper</returns>
-        </member>
-        <member name="T:EmitObjectMapper.Mappers.MapperPrimitiveImpl">
-            <summary>
-            Mapper for primitive objects
-            </summary>
-        </member>
-        <member name="M:EmitObjectMapper.Mappers.MapperPrimitiveImpl.MapImpl(System.Object,System.Object,System.Object)">
-            <summary>
-            Copies object properties and members of "from" to object "to"
-            </summary>
-            <Param name="from">Source object</Param>
-            <Param name="to">Destination object</Param>
-            <returns>Destination object</returns>
-        </member>
-        <member name="M:EmitObjectMapper.Mappers.MapperPrimitiveImpl.CreateTargetInstance">
-            <summary>
-            Creates an instance of destination object
-            </summary>
-            <returns>Destination object</returns>
         </member>
     </members>
 </doc>

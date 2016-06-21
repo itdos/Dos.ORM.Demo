@@ -18,7 +18,7 @@
 		姓名：<input type="text" ms-duplex="SearchName" />
 		身份证号：<input type="text" ms-duplex="SearchIDNumber" />
 		手机号：<input type="text" ms-duplex="SearchMobilePhone" />
-		<input value="查询" type="button" class="btn btn-primary btn-xs" ms-click="GetUser" />
+		<input value="查询" type="button" class="btn btn-primary btn-xs" ms-click="GetUser(1)" />
 	</p>
 	<p>
 		<table class="table table-bordered table-hover">
@@ -76,7 +76,7 @@
 				vm.MobilePhone = "";
 				vm.Users = [];
 				vm.PageSize = 5;
-				vm.PageIndex = 0;
+				vm.PageIndex = 1;
 				vm.pager = {
 					onInit: function () {
 						avBody.GetUser(1);
@@ -102,11 +102,10 @@
 					}, function (result) {
 						if (result.IsSuccess) {
 							avBody.Users = result.Data;
-							$("#divPager").pagination(result.DataCount, {
-								callback: avBody.PageSelectCallback,
-								items_per_page: avBody.PageSize,
-								current_page: avBody.PageIndex
-							});
+							var widget = avalon.vmodels.pg;
+							if (widget && widget.totalItems !== result.DataCount) {
+							    widget.totalItems = result.DataCount;
+							}
 						} else {
 							alert("获取数据失败！异常信息：" + result.Message);
 						}

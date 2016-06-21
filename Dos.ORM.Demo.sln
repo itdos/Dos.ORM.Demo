@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Common", "中级玩法
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Business", "中级玩法demo之repository\Demo.Business\Demo.Business.csproj", "{8CA9AAC3-E22E-4861-8595-A7C8E41F1B3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dos.ORM", "..\Dos.ORM\Dos.ORM.csproj", "{4BEF1983-F275-4807-96EA-25B973BD6E94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{8CA9AAC3-E22E-4861-8595-A7C8E41F1B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CA9AAC3-E22E-4861-8595-A7C8E41F1B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CA9AAC3-E22E-4861-8595-A7C8E41F1B3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BEF1983-F275-4807-96EA-25B973BD6E94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BEF1983-F275-4807-96EA-25B973BD6E94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BEF1983-F275-4807-96EA-25B973BD6E94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BEF1983-F275-4807-96EA-25B973BD6E94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,5 +98,6 @@ Global
 		{4B475ED6-5540-42F5-AC03-640FA3F66376} = {552F4470-8CFA-4C9B-A2C6-16A284DB8270}
 		{8FDF9BF2-FFD2-419C-91BF-A6E4E7A38334} = {552F4470-8CFA-4C9B-A2C6-16A284DB8270}
 		{8CA9AAC3-E22E-4861-8595-A7C8E41F1B3A} = {552F4470-8CFA-4C9B-A2C6-16A284DB8270}
+		{4BEF1983-F275-4807-96EA-25B973BD6E94} = {DA52B61B-58BD-4D2C-A604-9F53DA5E8173}
 	EndGlobalSection
 EndGlobal

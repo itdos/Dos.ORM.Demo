@@ -3680,12 +3680,12 @@
         </member>
         <member name="M:Dos.ORM.Entity.GetModifyFields">
             <summary>
-            返回修改记录
+            返回修改记录。v.10.5.5以上版本请不要使用此方法。
             </summary>
         </member>
         <member name="M:Dos.ORM.Entity.GetModifyFieldsStr">
             <summary>
-            返回修改记录
+            返回修改记录。v.10.5.5及以下版本请不要使用此方法。
             </summary>
         </member>
         <member name="M:Dos.ORM.Entity.IsReadOnly">

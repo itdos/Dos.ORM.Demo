@@ -36,10 +36,6 @@
       <HintPath>..\..\packages\Dapper.1.50.0-beta9\lib\net40\Dapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Dos.ORM, Version=1.10.5.7, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Dos.ORM.1.10.5.7\lib\net40\Dos.ORM.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -117,6 +113,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Dos.ORM\Dos.ORM.csproj">
+      <Project>{4bef1983-f275-4807-96ea-25b973bd6e94}</Project>
+      <Name>Dos.ORM</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

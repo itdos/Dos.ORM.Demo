@@ -112,6 +112,11 @@
             Redis缓存。需要在AppSetting中配置：RedisHost、RedisPort
             </summary>
         </member>
+        <member name="P:Dos.ORM.NoSql.Redis.Conf">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:Dos.ORM.NoSql.Redis.#ctor">
             <summary>
             
@@ -127,11 +132,6 @@
             获取client
             </summary>
             <returns></returns>
-        </member>
-        <member name="P:Dos.ORM.NoSql.Redis.Conf">
-            <summary>
-            
-            </summary>
         </member>
         <member name="P:Dos.ORM.NoSql.Redis.conn">
             <summary>
@@ -151,6 +151,11 @@
         <member name="P:Dos.ORM.NoSql.RedisConfig.Hosts">
             <summary>
             主机列表
+            </summary>
+        </member>
+        <member name="P:Dos.ORM.NoSql.RedisConfig.Pwd">
+            <summary>
+            密码
             </summary>
         </member>
         <member name="P:Dos.ORM.NoSql.RedisConfig.CacheExpireMinutes">

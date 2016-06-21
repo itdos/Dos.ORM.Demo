@@ -21,9 +21,9 @@ namespace PerformanceTest
             var scount = 10000;
             //测试插入、修改、删除数据量
             var icount = 1000;
-            var 每类执行多少次 = 2;//默认值2
-            var 是否执行第一类 = true;//默认值true
-            var 是否执行增删改操作 = true;//默认值true
+            var 每类执行多少次 = 4;//默认值2
+            var 是否执行第一类 = false;//默认值true
+            var 是否执行增删改操作 = false;//默认值true
             var tcount = 0;
             var needInsert = new List<string>();
             var needUpdate = new List<string>();

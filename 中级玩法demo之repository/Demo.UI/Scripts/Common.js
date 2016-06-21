@@ -8,7 +8,10 @@ function ShiftDate(ns) {
     if (IsNull(ns)) {
         return "";
     }
-    return new Date(parseInt(ns.replace("/Date(", "").replace(")/", "")));
+    if (ns.indexOf('Date') > -1) {
+        return new Date(parseInt(ns.replace("/Date(", "").replace(")/", "")));
+    }
+    return new Date(ns);
 }
 Date.prototype.Format = function (format)
 {

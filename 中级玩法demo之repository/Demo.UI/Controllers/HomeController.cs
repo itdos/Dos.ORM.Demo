@@ -11,7 +11,7 @@ using Demo.DataModel.Base;
 namespace Demo.UI.Controllers
 {
     [ErrorLog]
-    public class HomeController : Controller
+    public class HomeController : CommonController
     {
         #region Oracle、MySql、SqlServer、PostgreSql等
         public ActionResult Index()

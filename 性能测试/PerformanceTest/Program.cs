@@ -22,8 +22,8 @@ namespace PerformanceTest
             //测试插入、修改、删除数据量
             var icount = 1000;
             var 每类执行多少次 = 4;//默认值2
-            var 是否执行第一类 = false;//默认值true
-            var 是否执行增删改操作 = false;//默认值true
+            var 是否执行第一类 = true;//默认值true
+            var 是否执行增删改操作 = true;//默认值true
             var tcount = 0;
             var needInsert = new List<string>();
             var needUpdate = new List<string>();
@@ -67,8 +67,10 @@ namespace PerformanceTest
                         for (int j = 0; j < icount; j++)
                         {
                             needInsert.Add(
-                                $" insert into T_PerformanceTest values('{ids[j]}','{"IT大师 http://www.itdos.com"}'," +
-                                $"{j},{j},{j},'{"IT大师text http://www.itdos.com"}','{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}',{1},{j}) ");
+                                string.Format(
+                                    " insert into T_PerformanceTest values('{0}','{1}',{2},{3},{4},'{5}','{6}',{7},{8}) ",
+                                    ids[j], "IT大师 http://www.itdos.com", j, j, j, "IT大师text http://www.itdos.com",
+                                    DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), 1, j));
                         }
                         #endregion
                         tcount = 0;
@@ -85,7 +87,10 @@ namespace PerformanceTest
                         #region 初始化需要修改的sql
                         for (int j = 0; j < icount; j++)
                         {
-                            needUpdate.Add($" update T_PerformanceTest set T1='IT大师 http://www.itdos.com2',T2={j + 2},T3={j + 2},T4={j + 2},T5='IT大师text http://www.itdos.com2',T6='{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}',T7=0,T8={j + 2} where Id='{ids[j]}' ");
+                            needUpdate.Add(
+                                string.Format(
+                                    " update T_PerformanceTest set T1='IT大师 http://www.itdos.com2',T2={0},T3={1},T4={2},T5='IT大师text http://www.itdos.com2',T6='{3}',T7=0,T8={4} where Id='{5}' ",
+                                    j + 2, j + 2, j + 2, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), j + 2, ids[j]));
                         }
                         #endregion
                         tcount = 0;
@@ -98,11 +103,11 @@ namespace PerformanceTest
                         Console.WriteLine("Dos.ORM修改" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
                         #endregion
                         #region Dos.ORM删除
-                        //删除。每次删除均重新从连接池取连接、插入数据、归还连接。
+                        //删除。每次删除均重新从连接池取连接、删除数据、归还连接。
                         #region 初始化需要删除的sql
                         for (int j = 0; j < icount; j++)
                         {
-                            needDelete.Add($" delete from T_PerformanceTest where Id='{ids[j]}' ");
+                            needDelete.Add(string.Format(" delete from T_PerformanceTest where Id='{0}' ", ids[j]));
                         }
                         #endregion
                         tcount = 0;
@@ -152,7 +157,7 @@ namespace PerformanceTest
                         Console.WriteLine("Dapper修改" + tcount + "条执行时间：" + time.ElapsedMilliseconds);
                         #endregion
                         #region Dapper删除
-                        //删除。每次删除均重新从连接池取连接、插入数据、归还连接。
+                        //删除。每次删除均重新从连接池取连接、删除数据、归还连接。
                         tcount = 0;
                         time.Restart();
                         foreach (var sql in needDelete)
@@ -248,7 +253,7 @@ namespace PerformanceTest
 
                     #region Dos.ORM删除
 
-                    //删除。每次删除均重新从连接池取连接、插入数据、归还连接。
+                    //删除。每次删除均重新从连接池取连接、删除数据、归还连接。
                     tcount = 0;
                     time.Restart();
                     foreach (var model in needInsertList)

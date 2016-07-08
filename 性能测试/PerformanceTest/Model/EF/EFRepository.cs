@@ -31,7 +31,10 @@ namespace PerformanceTest
     {
         public static readonly DbContext Context = new DosORMSqlServerEntities();
 
-        public static DbSet<T> Entities => Context.Set<T>();
+        public static DbSet<T> Entities
+        {
+            get { return Context.Set<T>(); }
+        }
 
         public static List<T> GetAll()
         {

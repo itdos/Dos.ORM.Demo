@@ -1,6 +1,6 @@
 # Dos.ORM
 <div>
-    <span style="font-size: 12px;"><strong><span style="color:blue;">Dos.ORM</span></strong><span style="color:blue;">（原Hxj.Data）</span>于<strong><span style="color:blue;">2009</span></strong>年发布，2015年正式开源。在初期开发过程参考了<span style="color:blue;">NBear</span>与<span style="color:blue;">MySoft</span>，吸取了他们的一些精华，加入新思想，同时参考<span style="color:blue;">EF</span>的<span style="color:blue;">Lambda</span>语法进行大量扩展。该组件已在上百个成熟企业项目中应用。</span>
+    <span style="font-size: 12px;"><strong><span style="color:blue;">Dos.ORM</span></strong><span style="color:blue;">（原Hxj.Data）</span>于<strong><span style="color:blue;">2009</span></strong>年发布、2015年正式开源，该组件已在数百个成熟项目中应用，是目前国内.Net用户量最多、最活跃、最完善的国产ORM。初期开发过程参考了<span style="color:blue;">NBear</span>与<span style="color:blue;">MySoft</span>，吸取了他们的一些精华，加入新思想，同时参考<span style="color:blue;">EF</span>的<span style="color:blue;">Lambda</span>语法进行大量扩展。</span>
 </div>
 <h4>
     为什么选择<span style="color:blue;">Dos.ORM（原Hxj.Data）</span>?
@@ -35,7 +35,7 @@
     </li>
 </ul>
 <div>
-    <span style="font-size: 12px;">作者博客：</span><a href="http://www.cnblogs.com/huxj/" _src="http://www.cnblogs.com/huxj/" target="_blank" style="font-size: 12px; "><span style="font-size: 12px;">http://www.cnblogs.com/huxj/</span></a>
+    <span style="font-size: 12px;">创始人博客：</span><a href="http://www.cnblogs.com/huxj/" _src="http://www.cnblogs.com/huxj/" target="_blank" style="font-size: 12px; "><span style="font-size: 12px;">http://www.cnblogs.com/huxj/</span></a>
 </div>
 <div>
     <span style="font-size: 12px;">官方网站：</span><a href="http://www.itdos.com/Dos/ORM/Index.html" target="_blank" _href="http://www.itdos.com/Dos/ORM/Index.html" textvalue="http://www.itdos.com/Dos/ORM/Index.html" style="font-size: 12px; "><span style="font-size: 12px;">http://ITdos.com/Dos/ORM/Index.html</span></a>
@@ -43,5 +43,9 @@
 <div>
     <span style="font-size: 12px;">交流QQ群：</span><a href="http://jq.qq.com/?_wv=1027&k=UlJ53g" target="_blank" _href="http://jq.qq.com/?_wv=1027&k=UlJ53g" style="font-size: 12px; "><span style="font-size: 12px;">60831381</span></a>
 </div>
-<img src="http://ITdos.com/Media/Default/upload/image/20150602/6356884744883987505297906.jpg" title="写法预览" alt="写法预览"/><br>
-<img src="http://itdos.com/Media/Default/upload/image/20150802/6357411400246019315744122.jpg" title="成功案例" alt="成功案例"/>
+<div>
+<p style="color:red;">Dos.ORM.Demo。含初级玩法demo之mvc简单三层（同时也是mvc学习者的入门教程）、中级玩法demo之repository、性能对比测试、数据库等。</p>
+<p style="color:red;"><a href="http://git.oschina.net/ITdos/Dos.ORM.Demo" target="_blank">http://git.oschina.net/ITdos/Dos.ORM.Demo</a></p>
+</div>
+<img src="http://file.itdos.com/Upload/Image/CmsNewsEditor/20150602/6356884744883987505297906.jpg" title="写法预览" alt="写法预览"/><br>
+<img src="http://file.itdos.com/Upload/Image/CmsNewsEditor/20150802/6357411400246019315744122.jpg" title="成功案例" alt="成功案例"/>

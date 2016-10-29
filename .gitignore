@@ -1,5 +1,6 @@
 bin/
 obj/
+Logs/
 *.suo
 /*.suo
 *.v11.suo

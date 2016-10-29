@@ -11,8 +11,8 @@ namespace Demo.DataAccess.Base
     public class Db
     {
         //public static readonly DbSession Context = new DbSession("MySqlConn");
-        //public static readonly DbSession Context = new DbSession("SqlServerConn");
-        public static readonly DbSession Context = new DbSession("SqliteConn");
+        public static readonly DbSession Context = new DbSession("SqlServerConn");
+        //public static readonly DbSession Context = new DbSession("SqliteConn");
         //public static readonly DbSession Context = new DbSession("AccessConn");
         //public static readonly DbSession Context = new DbSession("OracleConn");
         //public static readonly DbSession Context = new DbSession("PostgreSqlConn");

@@ -1,0 +1,1768 @@
+2016-10-29 10:37:57
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:37:57
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:37:57
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:37:57
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:38:22
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:38:22
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:38:22
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[CreateTime] DESC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:38:22
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[CreateTime] DESC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:38:23
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:38:23
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:38:23
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:38:23
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:41:16
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:41:16
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:41:16
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:41:16
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:41:17
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:41:17
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:41:17
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:41:17
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:41:19
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:41:19
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:41:19
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:41:19
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:41:20
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:41:20
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:41:20
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:41:20
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:42:32
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:42:32
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:42:32
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:42:32
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:42:33
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:42:33
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:42:33
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:42:33
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:43:12
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:43:14
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:43:14
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:43:14
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:43:21
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:43:25
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:43:25
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:45:02
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:47
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:51
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:51
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:51
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:53
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:53
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:53
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:53
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:54
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:54
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:54
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:54
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:56
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:56
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:56
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:56
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:58
+Text:	DELETE FROM [T_Student] WHERE [T_Student].[Id] = @Id1	
+Parameters:
+@Id1[Guid] = 38ed72d8-55a8-4966-9031-dc644ab4fd47
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:58
+Text:	DELETE FROM [T_Student] WHERE [T_Student].[Id] = @Id1	
+Parameters:
+@Id1[Guid] = 38ed72d8-55a8-4966-9031-dc644ab4fd47
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:58
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:58
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:58
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:48:58
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:01
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:01
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:01
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:01
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:03
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:03
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:03
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:03
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:10
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime2,@MobilePhone3,@IDNumber4,@Name5,@Id6)	
+Parameters:
+@CreateTime2[DateTime] = 2016/10/29 10:49:10
+@MobilePhone3[String] = 111
+@IDNumber4[String] = 11
+@Name5[String] = 111
+@Id6[Guid] = bf84cd18-5fb5-47d3-8909-ccb179ff7a83
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:10
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime2,@MobilePhone3,@IDNumber4,@Name5,@Id6)	
+Parameters:
+@CreateTime2[DateTime] = 2016/10/29 10:49:10
+@MobilePhone3[String] = 111
+@IDNumber4[String] = 11
+@Name5[String] = 111
+@Id6[Guid] = bf84cd18-5fb5-47d3-8909-ccb179ff7a83
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:10
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:10
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:10
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:10
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:12
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:12
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:12
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:12
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:16
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime7,@MobilePhone8,@IDNumber9,@Name10,@Id11)	
+Parameters:
+@CreateTime7[DateTime] = 2016/10/29 10:49:16
+@MobilePhone8[String] = 2222
+@IDNumber9[String] = 222
+@Name10[String] = 222
+@Id11[Guid] = 95215ac8-bd10-4be6-8e19-4cd575d0160a
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:16
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime7,@MobilePhone8,@IDNumber9,@Name10,@Id11)	
+Parameters:
+@CreateTime7[DateTime] = 2016/10/29 10:49:16
+@MobilePhone8[String] = 2222
+@IDNumber9[String] = 222
+@Name10[String] = 222
+@Id11[Guid] = 95215ac8-bd10-4be6-8e19-4cd575d0160a
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:16
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:16
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:16
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:16
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:18
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:18
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:18
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:18
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:19
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:19
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:19
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:19
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:20
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:20
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:20
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:20
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:21
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:21
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:21
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:21
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:22
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:22
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:22
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:22
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:24
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:24
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:24
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:24
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:25
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:25
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:25
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:25
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:42
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:42
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:42
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:42
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:43
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:43
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:43
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:43
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:43
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:43
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:43
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:43
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:44
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:44
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:44
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:49:44
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:51:30
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:51:30
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:51:34
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:51:34
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:52:31
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:52:31
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:52:33
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:52:33
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:22
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:22
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:22
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:22
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:23
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:23
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:23
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:23
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:24
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:24
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:24
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 11 AND 15 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:24
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 11 AND 15 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:25
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:25
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:25
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:25
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:26
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:26
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:26
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:26
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:28
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:28
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:28
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:28
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:30
+Text:	DELETE FROM [T_Student] WHERE [T_Student].[Id] = @Id12	
+Parameters:
+@Id12[Guid] = 0f84048d-e5d6-4bf0-8fc9-bdf8229f3fd8
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:30
+Text:	DELETE FROM [T_Student] WHERE [T_Student].[Id] = @Id12	
+Parameters:
+@Id12[Guid] = 0f84048d-e5d6-4bf0-8fc9-bdf8229f3fd8
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:30
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:30
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:30
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:30
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:33
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:33
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:33
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 11 AND 15 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:33
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 11 AND 15 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:35
+Text:	DELETE FROM [T_Student] WHERE [T_Student].[Id] = @Id13	
+Parameters:
+@Id13[Guid] = 7c914aaa-a563-4c8c-88ce-fee51a2a4587
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:35
+Text:	DELETE FROM [T_Student] WHERE [T_Student].[Id] = @Id13	
+Parameters:
+@Id13[Guid] = 7c914aaa-a563-4c8c-88ce-fee51a2a4587
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:35
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:35
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:35
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:35
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:37
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:37
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:37
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:37
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:38
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:38
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:38
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:38
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:42
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime14,@MobilePhone15,@IDNumber16,@Name17,@Id18)	
+Parameters:
+@CreateTime14[DateTime] = 2016/10/29 10:53:42
+@MobilePhone15[String] = sac
+@IDNumber16[String] = casc
+@Name17[String] = ccac
+@Id18[Guid] = c0a9b4ec-f8b6-4803-922d-13f8fb366087
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:42
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime14,@MobilePhone15,@IDNumber16,@Name17,@Id18)	
+Parameters:
+@CreateTime14[DateTime] = 2016/10/29 10:53:42
+@MobilePhone15[String] = sac
+@IDNumber16[String] = casc
+@Name17[String] = ccac
+@Id18[Guid] = c0a9b4ec-f8b6-4803-922d-13f8fb366087
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:42
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:42
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:42
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:42
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:44
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:44
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:44
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 11 AND 15 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:44
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 11 AND 15 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:46
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:46
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:46
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:46
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:47
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:47
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:47
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:47
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:54
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name19)	
+Parameters:
+@Name19[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:54
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name19)	
+Parameters:
+@Name19[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:54
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name19) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name19[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:53:54
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name19) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name19[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:02
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime20,@MobilePhone21,@IDNumber22,@Name23,@Id24)	
+Parameters:
+@CreateTime20[DateTime] = 2016/10/29 10:54:02
+@MobilePhone21[String] = sac1
+@IDNumber22[String] = casc1
+@Name23[String] = ccac1
+@Id24[Guid] = 2b21cfdc-2781-4904-a6ec-6ae181b450b0
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:02
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime20,@MobilePhone21,@IDNumber22,@Name23,@Id24)	
+Parameters:
+@CreateTime20[DateTime] = 2016/10/29 10:54:02
+@MobilePhone21[String] = sac1
+@IDNumber22[String] = casc1
+@Name23[String] = ccac1
+@Id24[Guid] = 2b21cfdc-2781-4904-a6ec-6ae181b450b0
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:02
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name25)	
+Parameters:
+@Name25[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:02
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name25)	
+Parameters:
+@Name25[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:02
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name25) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name25[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:02
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name25) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name25[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:05
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime26,@MobilePhone27,@IDNumber28,@Name29,@Id30)	
+Parameters:
+@CreateTime26[DateTime] = 2016/10/29 10:54:05
+@MobilePhone27[String] = sac11
+@IDNumber28[String] = casc11
+@Name29[String] = ccac11
+@Id30[Guid] = f92789dc-871f-4f44-b201-a6ff60d62d2a
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:05
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime26,@MobilePhone27,@IDNumber28,@Name29,@Id30)	
+Parameters:
+@CreateTime26[DateTime] = 2016/10/29 10:54:05
+@MobilePhone27[String] = sac11
+@IDNumber28[String] = casc11
+@Name29[String] = ccac11
+@Id30[Guid] = f92789dc-871f-4f44-b201-a6ff60d62d2a
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:05
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name31)	
+Parameters:
+@Name31[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:05
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name31)	
+Parameters:
+@Name31[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:05
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name31) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name31[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:05
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name31) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name31[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:08
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime32,@MobilePhone33,@IDNumber34,@Name35,@Id36)	
+Parameters:
+@CreateTime32[DateTime] = 2016/10/29 10:54:08
+@MobilePhone33[String] = sac111
+@IDNumber34[String] = casc111
+@Name35[String] = ccac111
+@Id36[Guid] = 6b70788a-7dfb-41e7-9cb5-85e993cf0a13
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:08
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime32,@MobilePhone33,@IDNumber34,@Name35,@Id36)	
+Parameters:
+@CreateTime32[DateTime] = 2016/10/29 10:54:08
+@MobilePhone33[String] = sac111
+@IDNumber34[String] = casc111
+@Name35[String] = ccac111
+@Id36[Guid] = 6b70788a-7dfb-41e7-9cb5-85e993cf0a13
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:08
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name37)	
+Parameters:
+@Name37[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:08
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name37)	
+Parameters:
+@Name37[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:08
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name37) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name37[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:08
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name37) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name37[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:12
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime38,@MobilePhone39,@IDNumber40,@Name41,@Id42)	
+Parameters:
+@CreateTime38[DateTime] = 2016/10/29 10:54:12
+@MobilePhone39[String] = sac1111
+@IDNumber40[String] = casc1111
+@Name41[String] = ccac1111
+@Id42[Guid] = 2d3da645-a73e-4a5e-bde5-65c6fd4b9040
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:12
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime38,@MobilePhone39,@IDNumber40,@Name41,@Id42)	
+Parameters:
+@CreateTime38[DateTime] = 2016/10/29 10:54:12
+@MobilePhone39[String] = sac1111
+@IDNumber40[String] = casc1111
+@Name41[String] = ccac1111
+@Id42[Guid] = 2d3da645-a73e-4a5e-bde5-65c6fd4b9040
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:12
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name43)	
+Parameters:
+@Name43[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:12
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name43)	
+Parameters:
+@Name43[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:12
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name43) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name43[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:12
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name43) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name43[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:14
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime44,@MobilePhone45,@IDNumber46,@Name47,@Id48)	
+Parameters:
+@CreateTime44[DateTime] = 2016/10/29 10:54:14
+@MobilePhone45[String] = sac11111
+@IDNumber46[String] = casc11111
+@Name47[String] = ccac11111
+@Id48[Guid] = 10370f1c-0843-461d-abab-328de8be74f2
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:14
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime44,@MobilePhone45,@IDNumber46,@Name47,@Id48)	
+Parameters:
+@CreateTime44[DateTime] = 2016/10/29 10:54:14
+@MobilePhone45[String] = sac11111
+@IDNumber46[String] = casc11111
+@Name47[String] = ccac11111
+@Id48[Guid] = 10370f1c-0843-461d-abab-328de8be74f2
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:14
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name49)	
+Parameters:
+@Name49[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:14
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name49)	
+Parameters:
+@Name49[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:14
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name49) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name49[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:14
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name49) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name49[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:17
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime50,@MobilePhone51,@IDNumber52,@Name53,@Id54)	
+Parameters:
+@CreateTime50[DateTime] = 2016/10/29 10:54:17
+@MobilePhone51[String] = sac111111
+@IDNumber52[String] = casc111111
+@Name53[String] = ccac111111
+@Id54[Guid] = 14d1bfc5-d11a-4d6b-959e-dd4e1164f28e
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:17
+Text:	INSERT INTO [T_Student] ([CreateTime],[MobilePhone],[IDNumber],[Name],[Id]) VALUES (@CreateTime50,@MobilePhone51,@IDNumber52,@Name53,@Id54)	
+Parameters:
+@CreateTime50[DateTime] = 2016/10/29 10:54:17
+@MobilePhone51[String] = sac111111
+@IDNumber52[String] = casc111111
+@Name53[String] = ccac111111
+@Id54[Guid] = 14d1bfc5-d11a-4d6b-959e-dd4e1164f28e
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:17
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name55)	
+Parameters:
+@Name55[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:17
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name55)	
+Parameters:
+@Name55[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:17
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name55) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name55[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:17
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name55) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name55[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:19
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:19
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:19
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:19
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:20
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:20
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:20
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:20
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:21
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:21
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:21
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 11 AND 15 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:21
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 11 AND 15 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:21
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:21
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:21
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 16 AND 20 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:21
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 16 AND 20 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:23
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name56)	
+Parameters:
+@Name56[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:23
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name56)	
+Parameters:
+@Name56[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:23
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name56) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name56[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:23
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name56) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name56[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:24
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name57)	
+Parameters:
+@Name57[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:24
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name57)	
+Parameters:
+@Name57[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:24
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name57) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name57[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:24
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name57) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name57[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:25
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name58)	
+Parameters:
+@Name58[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:25
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name58)	
+Parameters:
+@Name58[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:25
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name58) ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+Parameters:
+@Name58[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:25
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name58) ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+Parameters:
+@Name58[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:26
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name59)	
+Parameters:
+@Name59[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:26
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name59)	
+Parameters:
+@Name59[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:26
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name59) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name59[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:26
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name59) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name59[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:28
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name60)	
+Parameters:
+@Name60[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:28
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name60)	
+Parameters:
+@Name60[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:28
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name60) ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+Parameters:
+@Name60[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:28
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name60) ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+Parameters:
+@Name60[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:30
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name61)	
+Parameters:
+@Name61[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:30
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name61)	
+Parameters:
+@Name61[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:30
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name61) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name61[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:30
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name61) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name61[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:46
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name62)	
+Parameters:
+@Name62[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:46
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name62)	
+Parameters:
+@Name62[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:46
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name62) ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+Parameters:
+@Name62[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:46
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name62) ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+Parameters:
+@Name62[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:59
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:59
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:59
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:54:59
+Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:55:02
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name63)	
+Parameters:
+@Name63[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:55:02
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name63)	
+Parameters:
+@Name63[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:55:02
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name63) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name63[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:55:02
+Text:	 SELECT   TOP 5 * FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name63) ORDER BY [T_Student].[CreateTime] DESC 	
+Parameters:
+@Name63[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:55:15
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name64)	
+Parameters:
+@Name64[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:55:15
+Text:	 SELECT count(*) as r_cnt FROM [T_Student] WHERE ([T_Student].[Name] LIKE @Name64)	
+Parameters:
+@Name64[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:55:36
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name64) ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+Parameters:
+@Name64[String] = %1%
+
+
+-----------------------------------------------------------------------------
+2016-10-29 10:55:36
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  WHERE ([T_Student].[Name] LIKE @Name64) ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+Parameters:
+@Name64[String] = %1%
+
+
+-----------------------------------------------------------------------------

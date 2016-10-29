@@ -37,8 +37,8 @@
       <HintPath>..\..\packages\Dos.Common.1.0.8.8\lib\net40\Dos.Common.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Dos.ORM, Version=1.10.6.2, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Dos.ORM.1.10.6.2\lib\net40\Dos.ORM.dll</HintPath>
+    <Reference Include="Dos.ORM, Version=1.10.6.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Dos.ORM.1.10.6.9\lib\net40\Dos.ORM.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Dos.ORM.NoSql, Version=1.0.0.7, Culture=neutral, processorArchitecture=MSIL">

@@ -1033,6 +1033,47 @@
             <param name="fromEntity">来源实体</param>
             <returns>返回null 就表示fromEntity==null</returns>
         </member>
+        <!-- Badly formed XML comment ignored for member "M:Dos.ORM.EntityUtils.GetDeserializer(System.Type,System.Data.IDataReader,System.Int32,System.Int32,System.Boolean)" -->
+        <member name="M:Dos.ORM.EntityUtils.GetStructDeserializer(System.Type,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.EntityUtils.GetSettableProps(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.EntityUtils.GetSettableFields(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.EntityUtils.EmitInt32(System.Reflection.Emit.ILGenerator,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="il"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Dos.ORM.EntityUtils.GetTypeDeserializer(System.Type,System.Data.IDataReader,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="reader"></param>
+            <param name="startBound"></param>
+            <param name="length"></param>
+            <param name="returnNullIfFirstMissing"></param>
+            <returns></returns>
+        </member>
         <member name="T:Dos.ORM.EntityUtils.FastExpando">
             <summary>
             
@@ -3950,6 +3991,120 @@
             <param name="e"></param>
             <returns></returns>
         </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToWhereClip``2(System.Linq.Expressions.Expression{System.Func{`0,``0,``1,System.Boolean}})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToWhereClip``3(System.Linq.Expressions.Expression{System.Func{`0,``0,``1,``2,System.Boolean}})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <typeparam name="T4"></typeparam>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToWhereClip``4(System.Linq.Expressions.Expression{System.Func{`0,``0,``1,``2,``3,System.Boolean}})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <typeparam name="T4"></typeparam>
+            <typeparam name="T5"></typeparam>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToWhereClip``5(System.Linq.Expressions.Expression{System.Func{`0,``0,``1,``2,``3,``4,System.Boolean}})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <typeparam name="T4"></typeparam>
+            <typeparam name="T5"></typeparam>
+            <typeparam name="T6"></typeparam>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToWhereClipChild(System.Linq.Expressions.Expression,Dos.ORM.WhereType)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+            <param name="wt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.IsBoolFieldOrProperty(System.Linq.Expressions.Expression)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ConvertUnary(System.Linq.Expressions.UnaryExpression,Dos.ORM.WhereType)">
+            <summary>
+            
+            </summary>
+            <param name="ue"></param>
+            <param name="wtype"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ConvertBinary(System.Linq.Expressions.BinaryExpression,Dos.ORM.WhereType)">
+            <summary>
+            
+            </summary>
+            <param name="be"></param>
+            <param name="wt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ConvertMethodCall(System.Linq.Expressions.MethodCallExpression)">
+            <summary>
+            
+            </summary>
+            <param name="mce"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ConvertNull(System.Linq.Expressions.MethodCallExpression,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="mce"></param>
+            <param name="isNull"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ConvertEqualsCall(System.Linq.Expressions.MethodCallExpression,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="mce"></param>
+            <param name="isLike"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ConvertInCall(System.Linq.Expressions.MethodCallExpression,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="mce"></param>
+            <param name="notIn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ConvertLikeCall(System.Linq.Expressions.MethodCallExpression,System.String,System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="mce"></param>
+            <param name="left"></param>
+            <param name="right"></param>
+            <param name="isLike"></param>
+            <returns></returns>
+        </member>
         <member name="M:Dos.ORM.ExpressionToClip`1.GetMemberName(System.Linq.Expressions.Expression,Dos.ORM.ColumnFunction@,System.Linq.Expressions.MemberExpression@)">
             <summary>
             
@@ -3957,6 +4112,183 @@
             <param name="expr"></param>
             <param name="function"></param>
             <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.LeftAndRight(System.Linq.Expressions.BinaryExpression,Dos.ORM.QueryOperator,Dos.ORM.WhereType)">
+            <summary>
+            
+            </summary>
+            <param name="be"></param>
+            <param name="co"></param>
+            <param name="wtype"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.GetValue(System.Linq.Expressions.Expression)">
+            <summary>
+            
+            </summary>
+            <param name="right"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToGroupByClip(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+            <summary>
+            
+            </summary>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToGroupByClipChild(System.Linq.Expressions.Expression)">
+            <summary>
+            
+            </summary>
+            <param name="exprBody"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToOrderByClip(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+            <summary>
+            
+            </summary>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToOrderByDescendingClip(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+            <summary>
+            
+            </summary>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToOrderByClipChild(System.Linq.Expressions.Expression,Dos.ORM.OrderByOperater)">
+            <summary>
+            
+            </summary>
+            <param name="exprBody"></param>
+            <param name="orderBy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToSelect(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+            <summary>
+            
+            </summary>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToSelect``1(System.Linq.Expressions.Expression{System.Func{`0,``0,System.Object}})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T2"></typeparam>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToSelect``2(System.Linq.Expressions.Expression{System.Func{`0,``0,``1,System.Object}})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToSelect``3(System.Linq.Expressions.Expression{System.Func{`0,``0,``1,``2,System.Object}})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <typeparam name="T4"></typeparam>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToSelect``4(System.Linq.Expressions.Expression{System.Func{`0,``0,``1,``2,``3,System.Object}})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <typeparam name="T4"></typeparam>
+            <typeparam name="T5"></typeparam>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToSelect``5(System.Linq.Expressions.Expression{System.Func{`0,``0,``1,``2,``3,``4,System.Object}})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <typeparam name="T4"></typeparam>
+            <typeparam name="T5"></typeparam>
+            <typeparam name="T6"></typeparam>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToSelect(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            
+            </summary>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ToSelectChild(System.Linq.Expressions.Expression)">
+            <summary>
+            
+            </summary>
+            <param name="exprBody"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ConvertFun(System.Linq.Expressions.MethodCallExpression,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+            <param name="aliasName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.ConvertAs(System.Linq.Expressions.MethodCallExpression)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.GetTableName(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.GetFieldName(System.Reflection.MemberInfo)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.CreateField(System.Reflection.MemberInfo,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="mi"></param>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.CreateField(System.String[],System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="filedProp"></param>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dos.ORM.ExpressionToClip`1.CreateField(System.String[],System.Type,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="filedProp"></param>
+            <param name="t"></param>
+            <param name="asName"></param>
             <returns></returns>
         </member>
         <member name="T:Dos.ORM.PartialEvaluatorBase.Nominator">
@@ -5608,6 +5940,11 @@
         <member name="P:Dos.ORM.FromSection.PrefixString">
             <summary>
             前置值如 Top N
+            </summary>
+        </member>
+        <member name="F:Dos.ORM.FromSection._limitString">
+            <summary>
+            limit
             </summary>
         </member>
         <member name="P:Dos.ORM.FromSection.LimitString">

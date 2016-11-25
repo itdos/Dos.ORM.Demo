@@ -1806,3 +1806,23 @@ Text:	 SELECT   TOP 5 * FROM [T_Student]  ORDER BY [T_Student].[CreateTime] DESC
 
 
 -----------------------------------------------------------------------------
+2016-10-29 11:39:20
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 11:39:20
+Text:	 SELECT count(*) as r_cnt FROM [T_Student]	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 11:39:20
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
+2016-10-29 11:39:20
+Text:	 SELECT   * FROM ( SELECT   *,row_number() over( ORDER BY [T_Student].[Id] ASC) AS tmp_rowid FROM [T_Student]  ) AS tmp_table  WHERE tmp_rowid BETWEEN 6 AND 10 ORDER BY [CreateTime] DESC 	
+
+
+-----------------------------------------------------------------------------
